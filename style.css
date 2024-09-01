@@ -513,6 +513,14 @@ h2{
     background-size: cover;
 }
 
+.onlinebgtxt{
+    font-size: 50px;
+    color: white;
+    padding-left: 800px;
+    padding-top: 11px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 
 .orderpara{
     font-family: Okra, Helvetica, sans-serif;
