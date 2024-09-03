@@ -1042,4 +1042,59 @@ main4{
 
 
 
+/* season fav */
+.seasonfav {
+    width: 64rem;
+    padding: 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
 
+.seasonfav h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.seasonfav p {
+    font-size: 1em;
+    margin-bottom: 20px;
+}
+
+.seasonfav .food-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.seasonfav .food-item {
+    flex: 1 1 calc(25% - 20px);
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.seasonfav .food-item-img{
+    height: 60%;
+}
+
+.seasonfav .food-item-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.seasonfav .food-item-info h3 {
+    margin-top: 10px;
+    font-size: 1.2em;
+}
+
+.seasonfav .food-item-info p {
+    font-size: 14px;
+    margin-top: 5px;
+}
+/* end season fav */
