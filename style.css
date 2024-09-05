@@ -338,7 +338,7 @@ h2{
 	width: 100%;
 	height: 100%;
 	z-index: -1;
-	background-color: black;
+    background-color: black;
 	opacity: 0.2;
 }
 
@@ -526,7 +526,7 @@ h2{
     font-family: Okra, Helvetica, sans-serif;
     font-size: 35px;
     padding-left: 250px;
-    padding-top: 140px;
+    padding-top: 100px;
    
 }
 
@@ -790,14 +790,25 @@ main2{
 
 main3{
     display: grid;
-    grid-template-rows: 250px;
-    grid-template-columns:550px 390px;
+    grid-template-rows: 250px 1540px;
+    grid-template-columns: 500px 500px;
     grid-column-gap:90px;
     grid-row-gap: 190px;
     margin-left: 250px;
     margin-top: 160px;
    
 }
+
+/* main4{
+    display: grid;
+    grid-template-rows: 1540px;
+    grid-template-columns:500px 500px;
+    grid-column-gap:30px;
+    grid-row-gap: 10px;
+    margin-left: 250px;
+    margin-top: 60px;
+} */
+
 
 .d31{
     grid-row: 1/2;
@@ -893,7 +904,7 @@ main3{
     font-size: 13px;
 }
 
-main4{
+/* main4{
     display: grid;
     grid-template-rows: 1540px;
     grid-template-columns:500px 500px;
@@ -901,10 +912,10 @@ main4{
     grid-row-gap: 10px;
     margin-left: 250px;
     margin-top: 60px;
-}
+} */
 
 .d33{
-    grid-row: 1/2;
+    grid-row: 2/3;
     grid-column: 1/2;
     font-family: Okra, Helvetica, sans-serif;
     /* font-family: 'Open Sans'; */
@@ -919,7 +930,7 @@ main4{
 }
 
 .d34{
-    grid-row: 1/2;
+    grid-row: 2/3;
     grid-column: 2/3;
     font-family: Okra, Helvetica, sans-serif;
     /* font-family: 'Open Sans'; */
@@ -1040,14 +1051,19 @@ main4{
 }
 
 
+.main6 {
+    display: grid;
+    grid-template-columns: repeat(250px, 1fr);
+    gap: 20px;
+}
 
 
-/* season fav */
 .seasonfav {
     width: 64rem;
     padding: 20px;
     background-color: #f9f9f9;
     text-align: center;
+    margin-left: 240px;
 }
 
 .seasonfav h2 {
@@ -1097,4 +1113,4 @@ main4{
     font-size: 14px;
     margin-top: 5px;
 }
-/* end season fav */
+
