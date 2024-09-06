@@ -49,6 +49,7 @@
             <div class="logo"><img src="./Images/logo.avif" height=60px width=240px></div>
             <div class="midtext">Discover the best food & drinks in Jamshedpur</div>
             <div class="searchdiv"><input type="text" id="searchh" placeholder="Search for Restaurants or dishes"></div>
+            <button onclick="chk()">OK</button>
         </div>
     </div>
 <div class="sec2">
@@ -562,24 +563,24 @@
 </main2>
 
 <main3>
-    <div class="d31"><img src="https://images.pexels.com/photos/958545/pexels-photo-958545.jpeg?cs=srgb&dl=pexels-chanwalrus-958545.jpg&fm=jpg" height="100%" width="100%"></div>
-    <div class="d32"><b>Milanee's Kitchen</b>
-        <div class="milpara">North Indian, Chinese, Biryani, Fast Food</div>
+    <div class="d31"><img  id="resimg" src="images/milkit.jpg" height="100%" width="100%"></div>
+    <div class="d32" id="resname"><b>Milanee's Kitchen</b>
+        <div class="milpara" id="resdetail">North Indian, Chinese, Biryani, Fast Food</div>
         <div class="miloc">
             <div class="loclogo"><img src="https://cdn-icons-png.flaticon.com/128/2776/2776063.png" height="100%" width="100%"></div>
-            <div class="locpara">Opposite Women's College, J Road, Bistupur, East Singhbhum, Jamshedpur, Jharkhand, 831001</div>
+            <div class="locpara" id="restloc">Opposite Women's College, J Road, Bistupur, East Singhbhum, Jamshedpur, Jharkhand, 831001</div>
         </div>
         <div class="opening">
             <div class="divopen">Opens </div>
-            <div class="opentime">10am - 11:30pm(Everyday)</div>
+            <div class="opentime" id="restime">10am - 11:30pm(Everyday)</div>
         </div>
         <div class="ratingsmil">
             <div class="dinerate">
-                <div class="dineratebtn"><b>4.3*</b></div>
+                <div class="dineratebtn" id="dirate"><b>4.3*</b></div>
                 <div class="dineratetitle"><b>Dining Rating</b></div>
             </div>
             <div class="delirate">
-                <div class="dineratebtn"><b>4.8</b></div>
+                <div class="dineratebtn" id="derate"><b>4.8*</b></div>
                 <div class="dineratetitle"><b>Delivery Rating</b></div>
             </div>
         </div>
@@ -590,10 +591,10 @@
           <div  class="milvegtop">
             <div class="milvegpic"><img src="https://img.freepik.com/premium-photo/indian-breakfast-dish-paneer-paratha-serve-with-curd-chutney_1106454-136498.jpg?size=626&ext=jpg&ga=GA1.1.499511868.1720688163&semt=ais_hybrid" width="100%" height="100%"></div>
             <div class="mildesc">
-                <div class="dishname" id="foodtitle"><b>Butter Garlic Naan</b></div>
-                <div class="dishqty">200 [ g ]</div>
-                <div class="dishprice">₹50/-</div>
-                <div class="dishdesc">Fluffy leavened dough flatbread enlivened with garlic & dollop of butter</div>
+                <div class="dishname" id="foodtitle0"><b>Butter Garlic Naan</b></div>
+                <div class="dishqty" id="qtytitle0">200 [ g ]</div>
+                <div class="dishprice" id="pricetitle0">₹50/-</div>
+                <div class="dishdesc" id="desctitle0">Fluffy leavened dough flatbread enlivened with garlic & dollop of butter</div>
             </div>
            </div>
              <!-- milbtn -->
@@ -614,10 +615,10 @@
             <div  class="milvegtop">
               <div class="milvegpic"><img src="https://www.flavourstreat.com/wp-content/uploads/2019/03/restaurant-style-paneer-makhani-recipe.jpg" width="100%" height="100%"></div>
               <div class="mildesc">
-                <div class="dishname"><b>Paneer Makhani</b></div>
-                <div class="dishqty">500 [ml]</div>
-                <div class="dishprice">₹180/-</div>
-                <div class="dishdesc"> Paneer Makhani lightly spiced with a hint of tang and sweetness.</div>
+                <div class="dishname" id="foodtitle1"><b>Paneer Makhani</b></div>
+                <div class="dishqty" id="qtytitle1">500 [ml]</div>
+                <div class="dishprice" id="pricetitle1">₹180/-</div>
+                <div class="dishdesc" id="desctitle1"> Paneer Makhani lightly spiced with a hint of tang and sweetness.</div>
             </div>
              </div>
                <!-- milbtn -->
@@ -638,10 +639,10 @@
             <div  class="milvegtop">
                 <div class="milvegpic"><img src="https://media.istockphoto.com/id/1398144537/photo/curd-samosa-chaat.jpg?s=612x612&w=0&k=20&c=TXAOhd3V-Ad2TnYmKzz2ZBdOvSERy4XVvb0DXucpItw=" width="100%" height="100%"></div>
                 <div class="mildesc">
-                    <div class="dishname"><b>Chole Samose Chaat</b></div>
-                    <div class="dishqty">100 [g]</div>
-                    <div class="dishprice">₹70/-</div>
-                    <div class="dishdesc">Samosa crushed with chole gravy & a topping of green chutney and sev.</div>
+                    <div class="dishname" id="foodtitle2"><b>Chole Samose Chaat</b></div>
+                    <div class="dishqty" id="qtytitle2">100 [g]</div>
+                    <div class="dishprice" id="pricetitle2">₹70/-</div>
+                    <div class="dishdesc" id="desctitle2">Samosa crushed with chole gravy & a topping of green chutney and sev.</div>
                 </div>
             </div>
                <!-- milbtn -->
@@ -662,10 +663,10 @@
             <div  class="milvegtop">
                 <div class="milvegpic"><img src="https://images.unsplash.com/photo-1589786742500-14363e62a9d0?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nzh8fGNoZWVzZSUyMGdyaWxsZWQlMjBzYW5kd2ljaHxlbnwwfDF8MHx8fDA%3D" width="100%" height="100%"></div>
                 <div class="mildesc">
-                    <div class="dishname"><b>Cheese Grilled Sandwich</b></div>
-                    <div class="dishqty">100 [g]</div>
-                    <div class="dishprice">₹120/-</div>
-                    <div class="dishdesc">Three Layered Bread with creamy and delicious cheese.</div>
+                    <div class="dishname" id="foodtitle3"><b>Cheese Grilled Sandwich</b></div>
+                    <div class="dishqty" id="qtytitle3">100 [g]</div>
+                    <div class="dishprice" id="pricetitle3">₹120/-</div>
+                    <div class="dishdesc" id="desctitle3">Three Layered Bread with creamy and delicious cheese.</div>
                 </div>
             </div>
                <!-- milbtn -->
@@ -686,10 +687,10 @@
             <div  class="milvegtop">
                 <div class="milvegpic"><img src="https://t3.ftcdn.net/jpg/07/53/75/14/360_F_753751496_xHNxVB44GiJDWLiXmiKYv6DtVvwaXNjX.jpg" width="100%" height="100%"></div>
                 <div class="mildesc">
-                    <div class="dishname"><b>Paneer Kabab</b></div>
-                    <div class="dishqty">250 [g]</div>
-                    <div class="dishprice">₹150/-</div>
-                    <div class="dishdesc">Grilled paneer cubes simmered in a spicy and smoky gravy.</div>
+                    <div class="dishname" id="foodtitle4"><b>Paneer Kabab</b></div>
+                    <div class="dishqty" id="qtytitle4">250 [g]</div>
+                    <div class="dishprice" id="pricetitle4">₹150/-</div>
+                    <div class="dishdesc" id="desctitle4">Grilled paneer cubes simmered in a spicy and smoky gravy.</div>
                 </div>
             </div>
                <!-- milbtn -->
@@ -714,10 +715,10 @@
             <div  class="milvegtop">
                 <div class="milvegpic"><img src="https://t4.ftcdn.net/jpg/08/14/19/19/360_F_814191958_uFotyhyIrIiRSbyHqTyQYM0gmao6H247.jpg" width="100%" height="100%"></div>
                 <div class="mildesc">
-                    <div class="dishname"><b>Chicken Lollipop</b></div>
-                    <div class="dishqty">400 [g]</div>
-                    <div class="dishprice">₹200/-</div>
-                    <div class="dishdesc">chicken drumette is marinated and then batter fried or baked until crisp.</div>
+                    <div class="dishname" id="foodtitle5"><b>Chicken Lollipop</b></div>
+                    <div class="dishqty" id="qtytitle5">400 [g]</div>
+                    <div class="dishprice" id="pricetitle5">₹200/-</div>
+                    <div class="dishdesc" id="desctitle5">chicken drumette is marinated and then batter fried or baked until crisp.</div>
                 </div>
             </div>
                <!-- milbtn -->
@@ -738,10 +739,10 @@
             <div  class="milvegtop">
                 <div class="milvegpic"><img src="https://storage.googleapis.com/takeapp/media/clyk2sqpn000k0clb92xh77lf.jpg" width="100%" height="100%"></div>
                 <div class="mildesc">
-                    <div class="dishname"><b>Chicken Leg Biryani</b></div>
-                    <div class="dishqty">400 [g]</div>
-                    <div class="dishprice">₹250/-</div>
-                    <div class="dishdesc">A Pakistani dish that incorporates layers and layers of flavor together. </div>
+                    <div class="dishname" id="foodtitle6"><b>Chicken Leg Biryani</b></div>
+                    <div class="dishqty" id="qtytitle6">400 [g]</div>
+                    <div class="dishprice" id="pricetitle6">₹250/-</div>
+                    <div class="dishdesc" id="desctitle6">A Pakistani dish that incorporates layers and layers of flavor together. </div>
                 </div>
             </div>
                <!-- milbtn -->
@@ -763,10 +764,10 @@
             <div  class="milvegtop">
                 <div class="milvegpic"><img src="https://easyindiancookbook.com/wp-content/uploads/2023/02/chicken-tikka-3-jpg.webp" width="100%" height="100%"></div>
                 <div class="mildesc">
-                    <div class="dishname"><b>Chicken Tikka Kebab</b></div>
-                    <div class="dishqty">200 [g]</div>
-                    <div class="dishprice">₹220/-</div>
-                    <div class="dishdesc">Boneless pieces of chicken, marinated in spiced yogurt, and cooked on charcoal.</div>
+                    <div class="dishname" id="foodtitle7"><b>Chicken Tikka Kebab</b></div>
+                    <div class="dishqty" id="qtytitle7">200 [g]</div>
+                    <div class="dishprice" id="pricetitle7">₹220/-</div>
+                    <div class="dishdesc" id="desctitle7">Boneless pieces of chicken, marinated in spiced yogurt, and cooked on charcoal.</div>
                 </div>
             </div>
                <!-- milbtn -->
@@ -788,10 +789,10 @@
             <div  class="milvegtop">
                 <div class="milvegpic"><img src="https://gully2gully.in/wp-content/uploads/2021/12/egg-roll.jpg" width="100%" height="100%"></div>
                 <div class="mildesc">
-                    <div class="dishname"><b>Egg Chicken Roll</b></div>
-                    <div class="dishqty">100 [g]</div>
-                    <div class="dishprice">₹80/-</div>
-                    <div class="dishdesc">Egg & Chicken simply, deliciously put together and packed with together.</div>
+                    <div class="dishname" id="foodtitle8"><b>Egg Chicken Roll</b></div>
+                    <div class="dishqty" id="qtytitle8">100 [g]</div>
+                    <div class="dishprice" id="pricetitle8">₹80/-</div>
+                    <div class="dishdesc" id="desctitle8">Egg & Chicken simply, deliciously put together and packed with together.</div>
                 </div>
             </div>
                <!-- milbtn -->
@@ -813,10 +814,10 @@
             <div  class="milvegtop">
                 <div class="milvegpic"><img src="https://static.toiimg.com/thumb/75454037.cms?imgsize=1271304&width=800&height=800" width="100%" height="100%"></div>
                 <div class="mildesc">
-                    <div class="dishname"><b>Golden Fried Prawn</b></div>
-                    <div class="dishqty">300 [g]</div>
-                    <div class="dishprice">₹300/-</div>
-                    <div class="dishdesc">Spicy Prawns with Sweet delicious Dipping.</div>
+                    <div class="dishname" id="foodtitle9"><b>Golden Fried Prawn</b></div>
+                    <div class="dishqty" id="qtytitle9">300 [g]</div>
+                    <div class="dishprice" id="pricetitle9">₹300/-</div>
+                    <div class="dishdesc" id="desctitle9">Spicy Prawns with Sweet delicious Dipping.</div>
                 </div>
             </div>
                <!-- milbtn -->

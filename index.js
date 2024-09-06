@@ -46,6 +46,33 @@ const fprice=[
     [70, 80, 90, 50, 60, 100, 120, 130, 110, 140]
 ]
 
+const qtyname=[
+["200g", "500ml", "100g", "100g", "250g", "400g", "400g", "200g", "100g", "300g"], // Milanees's Kitchen
+["200g", "250g", "300g", "150ml", "200g", "250g", "300g", "150g", "100g", "300g"], // Grill Inn
+["150g", "200g", "180g", "160g", "200g", "300g", "400g", "350g", "300g", "400g"], // The Bawarchi
+["200g", "150g", "250g", "300g", "200g", "350g", "300g", "400g", "350g", "400g"], // Food Republic
+["300g", "350g", "400g", "300g", "400g", "450g", "500g", "470g", "420g", "450g"], // Oven Story Pizza
+["100ml", "120ml", "110ml", "130ml", "150ml", "200ml", "170ml", "180ml", "150g", "200g"], // Amor Ice Cream
+["180g", "200g", "250g", "300g", "350g", "400g", "450g", "350g", "300g", "400g"], // The Chinese Monk
+["150g", "200g", "150g", "200g", "180g", "220g", "300g", "240g", "200g", "250g"], // The Hunger Out
+["100g", "150g", "80g", "70g", "100g", "150g", "200g", "180g", "120g", "200g"],   // Galaxy Sweets
+["150g", "250g", "200g", "180g", "250g", "300g", "400g", "350g", "300g", "400g"], // Gyani's Restaurant
+["200g", "100g", "150g", "120g", "130g", "200g", "220g", "180g", "150g", "200g"], // Fresh Eat & Bite
+["150g", "100g", "50g", "60g", "100g", "200g", "220g", "200g", "150g", "250g"],   // South Indian@99
+["200g", "250g", "180g", "150g", "300g", "400g", "450g", "400g", "350g", "500g"], // The Golden Chow
+["180g", "200g", "150g", "160g", "200g", "250g", "300g", "350g", "300g", "450g"], // Hotel Paras Heights
+["300g", "350g", "200g", "250g", "300g", "400g", "500g", "450g", "350g", "400g"], // Biryani By Kilo
+["200g", "150g", "200g", "250g", "150g", "400g", "500g", "450g", "350g", "300g"], // The Alcor Hotel
+["300g", "250g", "200g", "150g", "250g", "400g", "450g", "400g", "350g", "450g"], // Pentola Hotel
+["150g", "200g", "180g", "120g", "150g", "250g", "300g", "250g", "300g", "350g"], // Indiana Burgers
+["150g", "100g", "150g", "200g", "250g", "300g", "400g", "350g", "300g", "400g"], // Campus Addaa
+["200g", "100g", "150g", "180g", "250g", "300g", "350g", "300g", "200g", "400g"], // Kitchen Kraft
+["100g", "120g", "130g", "140g", "100g", "200g", "150g", "180g", "170g", "200g"]  // The Dessert Zone
+];
+
+
+
+
 const fdescrip=[
    [
         "Fluffy leavened dough flatbread enlivened with garlic & dollop of butter",
@@ -319,15 +346,108 @@ const fdescrip=[
     ]        
 ]
 
+const imgres=["milkit.jpg","grillin.jpg","bawar.avif","foodrep.jpg","ovenst.avif","amore.webp","tcm.avif","tho.webp","galsw.jpg","gyani.avif","feab.jpg","si99.webp","goldenchow.jpg","parash.avif","bbk.webp","alcor.jpg","pentola.jpg","ib.avif","ca.png","kk.jpg","deszone.jpg"]
+const restname=["Milanee's Kitchen","Grill Inn","The Bawarchi","Food Republic","Oven Story Pizza","Amore Ice Cream","The Chinese Monk","The Hunger Out","Galaxy Sweets","Gyani's Restaurant","Fresh Eat & Bite","South Indian @99","The Golden Chow","Hotel Paras Heights","Biryani By Kilo","The Alcor Hotel","Pentola Hotel","Indiana Burgers","Campus Addaa","Kitchen Kraft","The Dessert Zone"]
+const restdescrip=[
+    "North Indian, Chinese, Biryani, Fast Food",
+    "Fast Food, Burger, Pizza, Desserts, Beverages",
+    "North Indian, Chinese, Biryani, Rolls, Momos, Sichuan",
+    "North Indian, Chinese, Biryani, Seafood, Rolls, Momos, Sichuan",
+    "Pizza, Italian, Pasta, Fries",
+    "Ice Cream, Desserts, Sweets",
+    "Chinese, Fast Food, Rolls, Momos, Sichuan",
+    "South Indian, North Indian, Momos, Chinese, Fast Food, Street Food",
+    "Mithai, Chinese, Street Food",
+    "North Indian, Mughlai, Biryani, Fast Food, Chinese, Beverages",
+    "Fast Food, Pizza, Sandwiches",
+    "South Indian, Burger",
+    "Chinese, Juices, Shake",
+    "North Indian, Chinese, Desserts, Sichuan",
+    "Biryani, Hyderabadi, Kebab, North Indian, Ice Cream, Desserts",
+    "North Indian, Mughlai, Kebab, Seafood, Biryani, Desserts",
+    "North Indian, Chinese",
+    "Burger, American, Fast Food, Desserts, Shake, Beverages",
+    "North Indian, Chinese, Mughlai, Fast Food, Rolls, Sichuan",
+    "North Indian, Gujarati, Sandwich, Healthy Food, Fast Food, Desserts",
+    "Desserts, Shake, Ice Cream, Bakery, Beverages"
+]
+
+const resaddress=[
+    "Opposite Women's College, J Road, Bistupur, East Singhbhum, Jamshedpur, Jharkhand, 831001",
+    "Plot 443, Khata 38, Ground Floor, Riddhi Siddhi Bhawan Sonari, Jamshedpur, Jharkhand, 831001",
+    "Beside Blue Bells English High School.Dimna Road, Muncipality, Purbi Singhbhum, Mango, Jamshedpur",
+    "Shop 4, Plaza Market, Near Bhubaneswari Temple, Telco Colony, Jamshedpur, Jharkhand, 831001",
+    "GROUND FLOOR, NIL-14, B CHAKRAVARTY COMPOUND, Contractors Area, Bistupur, Jamshedpur, Jharkhand 831001",
+    "93B, New Sitaram Dera, Sakchi, Jamshedpur,Jharkhand",
+    "3rd Floor, Swarnswaroop Tower, New Kalimati Road, Near Howrah Bridge, Sakchi, Jamshedpur",
+    "16/B, Kasidih Line 1, Near Durga Puja Maidan, Sakchi, Jamshedpur",
+    "23/508, Jaiswal Complex, Sakchi, Jamshedpur, Jharkhand",
+    "49/50, Telco Azad Market, Telco Colony, Jamshedpur, Jharkhand",
+    "17-K2/1, Cross Road, Telco Colony, Jamshedpur",
+    "K-95-A-12, Village Masoodpur, Vasant Kunj, Jamshedpur, Jharkhand",
+    "Shop 2, Hanumant Nagar, Moon City Road, Mango, Jamshedpur",
+    "Poreshbala Developers Private Limited, Main Road, Gamharia, Chota Gamahriya, Jamshedpur",
+    "Holding 16, Block Jamshedpur, Purbi Singhbhum, Mills And Godown Road Area, Sakchi, Jamshedpur",
+    "Holding 4, Ramdas Bhatta, Bistupur, Jamshedpur",
+    "Main Road, Near UCO Bank, Mango, Jamshedpur",
+    "Shop Hts, bistupur, Jamshedpur - 831001",
+    "House 30, Taj Building, Aambagan, SNP Area, Sakchi, Jamshedpur",
+    "1/3, Kanwal Sam Tower, Uliyan, Kadma, Anil Sur Path, C Road, Sonari, Jamshedpur",
+    "H-T-S Shop, Purbi Singhbhum, Bistupur, Jamshedpur"
+]
+
+openingtym=[
+    "10am - 11:30pm(Everyday)",
+    "9am - 10pm(Mon - Sat)",
+    "10:30am - 12am(Everyday)",
+    "10am - 11pm(Mon - Fri)",
+    "10:30am - 11:30pm(Mon - Sat)",
+    "10am - 11:30pm(Everyday)",
+    "10:30am - 11:30pm(Mon - Sat)",
+    "10am - 11:30pm(Everyday)",
+    "10am - 11pm(Mon - Fri)",
+    "10:30am - 11:30pm(Mon - Sat)",
+    "10am - 11:30pm(Everyday)",
+    "10am - 11pm(Mon - Fri)",
+    "10am - 11:30pm(Everyday)",
+    "10am - 11pm(Mon - Fri)",
+    "10am - 11:30pm(Everyday)",
+    "10:30am - 11:30pm(Mon - Sat)",
+    "10am - 11:30pm(Everyday)",
+    "10am - 11pm(Mon - Fri)",
+    "10am - 11:30pm(Everyday)",
+    "10:30am - 11:30pm(Mon - Sat)",
+    "10am - 11pm(Mon - Fri)"
+
+]
+
+ratedine=["4.3*","4.1*","4.4*","4.2*","4.5*","4.2*","3.5*","3.7*","4.3*","4.1*","4.3*","4.5*","4.2*","3.8*","4.1*","4.3*","4.4*","3.9*"]
+ratedeli=["4.8*","4.7*","4.8*","4.3*","4.0*","4.8*","4.1*","4.2*","4.5*","4.3*","4.6*","4.2*","4.8*","4.0*","4.9*","4.4*","4.2*","4.8*",]
+
+
 function chk(){
-    let s=document.getElementById('restname')=value;
+    let s=document.getElementById('searchh').value;
     for (let i = 0; i < restaurant.length; i++) 
     {
         if (restaurant[i] === s)
         {
+           window.alert(resaddress[i])
+// 7lines of code
+            document.getElementById("resimg").src = "images/"+imgres[i]
+            document.getElementById("resname").innerHTML = restname[i] 
+            document.getElementById("resname").getElementById("resdetail").innerHTML= restdescrip[i];
+         //   document.getElementById("restloc").innerHTML = resaddress[i]
+          //  document.getElementById("restime").innerHTML = openingtym[i]
+            //document.getElementById("dirate").innerHTML = ratedine[i]
+            //document.getElementById("derate").innerHTML = ratedeli[i]
+
+
             for (let j = 0; j < foodname[i].length; j++)
             {
-                document.getElementById("foodtitle").innerText = foodname[i][j];
+                document.getElementById("foodtitle"+ j).innerText = foodname[i][j];
+                document.getElementById("qtytitle"+ j).innerText = qtyname[i][j];
+                document.getElementById("pricetitle"+ j).innerText = fprice[i][j];
+                document.getElementById("desctitle"+ j).innerText = fdescrip[i][j];
             }
         }
 
