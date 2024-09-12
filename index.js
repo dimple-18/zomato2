@@ -348,16 +348,16 @@ const fdescrip=[
 
 const imgres=["milkit.jpg","grillin.jpg","bawar.avif","foodrep.jpg","ovenst.avif","amore.webp","tcm.avif","tho.webp","galsw.jpg","gyani.avif","feab.jpg","si99.webp","goldenchow.jpg","parash.avif","bbk.webp","alcor.jpg","pentola.jpg","ib.avif","ca.png","kk.jpg","deszone.jpg"]
 const restname=["Milanee's Kitchen","Grill Inn","The Bawarchi","Food Republic","Oven Story Pizza","Amore Ice Cream","The Chinese Monk","The Hunger Out","Galaxy Sweets","Gyani's Restaurant","Fresh Eat & Bite","South Indian @99","The Golden Chow","Hotel Paras Heights","Biryani By Kilo","The Alcor Hotel","Pentola Hotel","Indiana Burgers","Campus Addaa","Kitchen Kraft","The Dessert Zone"]
-const restdescrip=[
+const resttdescrip=[
     "North Indian, Chinese, Biryani, Fast Food",
-    "Fast Food, Burger, Pizza, Desserts, Beverages",
+   "Fast Food, Burger, Pizza, Desserts, Beverages",
     "North Indian, Chinese, Biryani, Rolls, Momos, Sichuan",
     "North Indian, Chinese, Biryani, Seafood, Rolls, Momos, Sichuan",
     "Pizza, Italian, Pasta, Fries",
     "Ice Cream, Desserts, Sweets",
     "Chinese, Fast Food, Rolls, Momos, Sichuan",
     "South Indian, North Indian, Momos, Chinese, Fast Food, Street Food",
-    "Mithai, Chinese, Street Food",
+   "Mithai, Chinese, Street Food",
     "North Indian, Mughlai, Biryani, Fast Food, Chinese, Beverages",
     "Fast Food, Pizza, Sandwiches",
     "South Indian, Burger",
@@ -431,15 +431,19 @@ function chk(){
     {
         if (restaurant[i] === s)
         {
-           window.alert(resaddress[i])
+          // window.alert(document.getElements().getElementsByTags())
 // 7lines of code
             document.getElementById("resimg").src = "images/"+imgres[i]
-            document.getElementById("resname").innerHTML = restname[i] 
-            document.getElementById("resname").getElementById("resdetail").innerHTML= restdescrip[i];
-         //   document.getElementById("restloc").innerHTML = resaddress[i]
-          //  document.getElementById("restime").innerHTML = openingtym[i]
-            //document.getElementById("dirate").innerHTML = ratedine[i]
-            //document.getElementById("derate").innerHTML = ratedeli[i]
+            document.getElementById("resname").innerHTML = restname[i]
+            var abc= document.getElementsByClassName("d32")
+           
+            document.getElementById(abc[0]).innerHTML =  resttdescrip[i]
+           // document.getElementById("restttdetail").innerHTML = resttdescrip[i]
+
+            document.getElementById("restloc").innerHTML = resaddress[i]
+            document.getElementById("restime").innerHTML = openingtym[i]
+            document.getElementById("dirate").innerHTML = ratedine[i]
+            document.getElementById("derate").innerHTML = ratedeli[i]
 
 
             for (let j = 0; j < foodname[i].length; j++)
@@ -449,7 +453,9 @@ function chk(){
                 document.getElementById("pricetitle"+ j).innerText = fprice[i][j];
                 document.getElementById("desctitle"+ j).innerText = fdescrip[i][j];
             }
-        }
+         }
 
-    }
-}
+     }
+ }
+
+

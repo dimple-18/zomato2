@@ -389,7 +389,7 @@ h2{
 
 .sec4{
     width: 100%;
-    height: 780px;
+    height: 630px;
     margin-top: 15px;
 }
 
@@ -437,6 +437,7 @@ h2{
     margin-top: 40px;
     margin-left: 240px;
     display:flex;
+    
 }
 
 .diningdiv{
@@ -477,6 +478,7 @@ h2{
     margin-top: 30px;
     display: flex;
     gap: 15px;
+    
 }
 
 .sec4bin{
@@ -511,6 +513,7 @@ h2{
     margin-top: 35px;
     background-image: url('./images/abcd.avif');
     background-size: cover;
+   
 }
 
 .onlinebgtxt{
@@ -525,8 +528,8 @@ h2{
 .orderpara{
     font-family: Okra, Helvetica, sans-serif;
     font-size: 35px;
-    padding-left: 250px;
-    padding-top: 100px;
+    padding-left: 260px;
+    padding-top: 60px;
    
 }
 
@@ -597,6 +600,7 @@ main1{
     grid-column-gap:40px;
     grid-row-gap: 120px;
     margin-left: 260px;
+    margin-top: 40px;
 }
 .d1{
     grid-row: 1/2;
@@ -792,7 +796,7 @@ main3{
     display: grid;
     grid-template-rows: 250px 1540px;
     grid-template-columns: 500px 500px;
-    grid-column-gap:90px;
+    grid-column-gap:50px;
     grid-row-gap: 190px;
     margin-left: 250px;
     margin-top: 160px;
@@ -925,7 +929,7 @@ main3{
     background-color: rgb(241, 240, 239);
 }
 .d33 h3{
-    padding-top: 4px;
+    padding-top: 0px;
     padding-left: 3px;
 }
 
@@ -941,7 +945,7 @@ main3{
 }
 
 .d34 h3{
-    padding-top: 4px;
+    padding-top: 0px;
     padding-left: 3px;
     
 }
@@ -1051,10 +1055,10 @@ main3{
 }
 
 
-.main6 {
+main6 {
     display: grid;
-    grid-template-columns: repeat(250px, 1fr);
-    gap: 20px;
+    grid-template-columns: 300px;
+    grid-template-rows: 430px;
 }
 
 
@@ -1064,6 +1068,7 @@ main3{
     background-color: #f9f9f9;
     text-align: center;
     margin-left: 240px;
+   
 }
 
 .seasonfav h2 {
