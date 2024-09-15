@@ -452,35 +452,35 @@ ratedeli=["4.8*","4.7*","4.8*","4.3*","4.0*","4.8*","4.1*","4.2*","4.5*","4.3*",
 
 
 
-function chk(){
-    let s=document.getElementById('searchh').value;
-    for (let i = 0; i <= restaurant.length; i++) 
-    {
-        if (restaurant[i] === s)
-        {
-          // window.alert(document.getElements().getElementsByTags())
-// 7lines of code
-            document.getElementById("resimg").src = "images/"+imgres[i]
-            document.getElementById("resname").innerHTML = restname[i]
-            document.getElementById("rdetail").innerHTML = resttdescrip[i]
+function chk() {
+    let s = document.getElementById('searchh').value;
+    for (let i = 0; i <= restaurant.length; i++) {
+        if (restaurant[i] === s) {
+            // Update restaurant information
+            document.getElementById("resimg").src = "images/" + imgres[i];
+            document.getElementById("resname").innerHTML = restname[i];
+            document.getElementById("rdetail").innerHTML = resttdescrip[i];
 
-            document.getElementById("restloc").innerHTML = resaddress[i]
-            document.getElementById("restime").innerHTML = openingtym[i]
-            document.getElementById("dirate").innerHTML = ratedine[i]
-            document.getElementById("derate").innerHTML = ratedeli[i]
+            document.getElementById("restloc").innerHTML = resaddress[i];
+            document.getElementById("restime").innerHTML = openingtym[i];
+            document.getElementById("dirate").innerHTML = ratedine[i];
+            document.getElementById("derate").innerHTML = ratedeli[i];
 
-
-            for (let j = 0; j <= foodname[i].length; j++)
-            {
-                
-                document.getElementById("foodtitle"+ j).innerText = foodname[i][j];
-                document.getElementById("qtytitle"+ j).innerText = qtyname[i][j];
-                document.getElementById("pricetitle"+ j).innerText = fprice[i][j];
-                document.getElementById("desctitle"+ j).innerText = fdescrip[i][j];
-                // document.getElementById("vegpics"+ j).innerText = fdimg[i][j];
-                document.getElementById("vegpics"+ j).src = fdimg[i][j];
+            // Update food items
+            for (let j = 0; j < foodname[i].length; j++) {
+                document.getElementById("foodtitle" + j).innerText = foodname[i][j];
+                document.getElementById("qtytitle" + j).innerText = qtyname[i][j];
+                document.getElementById("pricetitle" + j).innerText = fprice[i][j];
+                document.getElementById("desctitle" + j).innerText = fdescrip[i][j];
+                document.getElementById("vegpics" + j).src = fdimg[i][j];
             }
-         }
 
-     }
- }
+            // Scroll to element with ID 'main3'
+            document.getElementById("main3").scrollIntoView({
+                behavior: "smooth"  // Optional: adds smooth scrolling
+            });
+
+            break;  // Exit the loop once the restaurant is found
+        }
+    }
+}
