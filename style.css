@@ -206,9 +206,10 @@ h2{
 .searchdiv{
 	width:800px;
 	height:50px;
-	margin-left:370px;
+	margin-left:340px;
 	margin-top:50px;
     z-index: 101;
+    display: flex;
     
 }
 #searchh{
@@ -986,6 +987,7 @@ main3{
     margin-top: 5px;
     padding-left: 6px;
     color: black;
+    font-weight: bold;
 }
 
 .dishqty{

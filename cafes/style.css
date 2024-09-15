@@ -92,15 +92,16 @@ body {
 }
 
 .ratingdiv{
-    width: 60%;
+    width: 95%;
     height: 30px;
     display: flex;
     margin-top: 4px;
     gap: 4px;
+    display: flex;
 }
 
 .rates{
-    width: 30%;
+    width: 43px;
     height: 25px;
     background-color: green;
     margin-left: 3px;
@@ -114,6 +115,12 @@ body {
     width: 60px;
     height: 25px;
     font-size: 12px;
+}
+
+.cartsym{
+    width: 30px;
+    height: 30px;
+    margin-left: 80px;
 }
 
 .detailcafe{
