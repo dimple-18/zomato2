@@ -1,0 +1,91 @@
+.chinhead{
+    width: 100%;
+    height: 30px;
+    background-color: brown;
+}
+.chinhead p{
+    color: whitesmoke;
+    text-align: center;
+    padding-top: 5px;
+}
+.headpic{
+    width: 72%;
+    height: 390px;
+    margin-left: 14%;
+    margin-top: 40px;
+    background-image: url("https://b137681.smushcdn.com/137681/wp-content/uploads/2023/06/Best-Indian-Restaurants-2024-Hero-696x365.jpg?lossy=1&strip=1&webp=1");
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    box-shadow: 0px 0px 6px rgb(68, 47, 47);
+    position: relative;
+    z-index: 106;
+}
+
+.sec1cafepic{
+    width: 72%;
+    height: 210px;
+    margin-left: 14%;
+    margin-top: 80px;
+    display: flex;
+    gap: 42px;
+}
+.cafediv{
+    width: 240px;
+    height: 200px;
+}
+
+.cafediv img{
+    border-radius: 8px 8px 8px 8px;
+    box-shadow: 0px 0px 9px rgb(221, 243, 99);
+}
+
+.sec1cafepara{
+    width: 72%;
+    height: 140px;
+    margin-left: 14%;
+    gap: 42px;
+    display: flex;
+}
+
+.paradiv{
+    width: 240px;
+    height: 130px;
+}
+
+.titlediv{
+    width: 100%;
+    height: 30px;
+}
+
+.ratingdiv{
+    width: 60%;
+    height: 30px;
+    display: flex;
+    margin-top: 4px;
+    gap: 4px;
+}
+
+.rates{
+    width: 30%;
+    height: 25px;
+    background-color: green;
+    margin-left: 3px;
+    border-radius: 5px 5px 5px 5px;
+    color:white;
+    font-size: 15px;
+    padding-left: 7px;
+}
+
+.diningdiv{
+    width: 60px;
+    height: 25px;
+    font-size: 12px;
+}
+
+.detailcafe{
+    width: 100%;
+    height: 55px;
+   
+}

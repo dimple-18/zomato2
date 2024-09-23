@@ -1,4 +1,3 @@
-
 /* @import url(https://fonts.googleapis.com/css?family=Open+Sans); */
 
 
@@ -168,7 +167,7 @@ h2{
 .navmain{
 	height:30px;
 	width:630px;
-	margin-left:750px;
+	margin-left:890px;
 	display:flex;
 	gap:50px;
     z-index: 101;
@@ -210,8 +209,21 @@ h2{
 	margin-top:50px;
     z-index: 101;
     display: flex;
+    align-items: center;
+    gap: 1rem;
     
 }
+
+.searchdiv button{
+  padding: 0.8rem 4rem;
+  margin-top: 30px;
+  border-radius: 6px;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  border: none;
+}
+
 #searchh{
 	height:50px;
 	width:760px;
@@ -800,8 +812,7 @@ main3{
     grid-column-gap:50px;
     grid-row-gap: 190px;
     margin-left: 250px;
-    margin-top: 160px;
-   
+    margin-top: 160px; 
 }
 
 /* main4{
@@ -862,8 +873,7 @@ main3{
 .opening .divopen{
     font-size: 16px;
     color:rgb(244, 162, 102);
-    color: red;
-    
+    color: red;   
 }
 .opentime{
     font-size: 14px;
@@ -1120,4 +1130,3 @@ main6 {
     font-size: 14px;
     margin-top: 5px;
 }
-
