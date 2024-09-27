@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Who We Are</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<div class="navdiv">
+    <div class="logodiv"><img src="https://b.zmtcdn.com/data/o2_assets/a4f0cde6fd8f7ae0f563292b5ea73eaf1699865959.png" alt="Logo"></div>
+    <div class="whowearediv"><p>Who We Are</p></div>
+</div>
+
+<!-- Main Carousel -->
+<div class="slideimgdiv carousel">
+    <div><img alt="Assortment" src="https://b.zmtcdn.com/web_assets/7e2c9e22ffe284beaec828fb62c4bfef1563875343.jpeg?output-format=webp" loading="lazy" class="sc-s1isp7-5 fyZwWD"></div>
+    <div><img alt="Affordability" src="https://b.zmtcdn.com/web_assets/cfa63c11504ffe735afd3ef0383a06de1563875358.jpeg?output-format=webp" loading="lazy" class="sc-s1isp7-5 fyZwWD"></div>
+    <div><img alt="Accessibility" src="https://b.zmtcdn.com/web_assets/0e000a058ca6e5b84d5e6b486cfd00651563875325.jpeg?output-format=webp" loading="lazy" class="sc-s1isp7-5 fyZwWD"></div>
+    <div><img alt="Quality" src="https://b.zmtcdn.com/web_assets/4c4754484b185afd6d88e357de72f7de1563874934.jpeg?output-format=webp" loading="lazy" class="sc-s1isp7-5 fyZwWD"></div>
+</div>
+
+<!-- Alphabetic Captions as Thumbnails -->
+<div class="alphabetscap carousel-thumbs">
+    <div class="capalp active" data-fulltext="Assortment">A</div>
+    <div class="capalp" data-fulltext="Affordability">A</div>
+    <div class="capalp" data-fulltext="Accessibility">A</div>
+    <div class="capalp" data-fulltext="Quality">Q</div>     
+</div>
+
+
+<!-- Paragraph Section -->
+<div class="paradiv">
+    <div class="paratitle">Driving the force of Assortment</div>
+    <div class="paradesc">For over a decade now, we’ve been empowering our customers in discovering new tastes and experiences across countries...</div>
+</div>
+
+<!-- Who We Are Section -->
+<div class="mainwhoarewe">
+    <div class="mainwhoarewe-left">
+        <div class="maintitle">Who are we?</div>
+        <div class="mainpara">Launched in 2010, our technology platform connects customers, restaurant partners, and delivery partners...</div>
+    </div>
+    <div class="mainwhoarewe-right"><img src="https://b.zmtcdn.com/web/about/a7b0a36d5107f3590895981dab2eeac31563208212.jpeg?output-format=webp" alt="Who we are"></div>
+</div>
+
+<!-- Life at Zomato Section -->
+<div class="bignav">
+    <div class="headbignav">Glimpse of Life At Zomato</div>
+</div>
+
+<!-- Gallery Section -->
+<div class="galdiv">
+    <div class="leftgal">
+        <div class="leftpic"><img src="https://b.zmtcdn.com/web/about/945996bdd3db3d99d80a2112cea29d371563210246.png?output-format=webp" alt="Gallery Image 1"></div>
+        <div class="leftpicdesc">Whether you’re a chef or food lover, we bring people together through love for food, making each meal memorable.</div>
+        <div class="leftpic"><img src="https://b.zmtcdn.com/web/9f3cfb04b9084ef3a1b6bb6097af0d1f1562688573.png?output-format=webp" alt="Gallery Image 2"></div>
+        <div class="leftpicdesc">Zomato's platform enhances accessibility to great meals with just a few clicks.</div>
+    </div>
+    <div class="midpic"><img src="https://b.zmtcdn.com/web/about/2164bf45244e5c8444183e44500bbce01563210961.png?output-format=webp" alt="Gallery Image 3"></div>
+    <div class="rightgal">
+        <div class="rightpic"><img src="https://b.zmtcdn.com/web/about/assets/1279699be7bf8786fda44f92afc9c3511563126954.png?output-format=webp" alt="Gallery Image 4"></div>
+        <div class="rightpicdesc">Zomato offers quick access to restaurants, enabling food lovers to enjoy meals effortlessly.</div>
+        <div class="rightpic"><img src="https://b.zmtcdn.com/web/about/ff03481fd5bab46412231b3d9de45cd21563211547.jpeg?output-format=webp" alt="Gallery Image 5"></div>
+        <div class="rightpicdesc">With Zomato, dining is convenient and connected to fast delivery options.</div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        // First, initialize the main carousel
+        $('.carousel').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: true,
+            fade: true,
+        });
+
+        // Then initialize the navigation buttons or alphabet carousel
+        $('.alphabetscap').slick({
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            asNavFor: '.carousel',
+            focusOnSelect: true,
+            arrows: false
+        });
+
+        // Sync alphabet buttons with carousel slide
+        $('.carousel').on('afterChange', function(event, slick, currentSlide) {
+            $('.capalp').removeClass('active');
+            $('.capalp').eq(currentSlide).addClass('active');
+            updateCurrentText(currentSlide);
+        });
+
+        // Handle click event on the alphabet buttons
+        $('.capalp').on('click', function() {
+            // Get the full text from the data attribute
+            const fullText = $(this).data('fulltext');
+
+            // Update the displayed current text
+            $('#current-text').text(fullText);
+
+            // Change the text of the clicked button to its full text
+            $('.capalp').each(function(index) {
+                if ($(this).hasClass('active')) {
+                    $(this).text(fullText); // Full text for active
+                } else {
+                    $(this).text($(this).data('fulltext')[0]); // First character for non-active
+                }
+            });
+
+            // Update active class
+            $('.capalp').removeClass('active');
+            $(this).addClass('active');
+        });
+
+        // Function to update the displayed current text based on the slide index
+        function updateCurrentText(slideIndex) {
+            const fullText = $('.capalp').eq(slideIndex).data('fulltext');
+            $('#current-text').text(fullText);
+
+            // Update buttons to show the correct text based on active state
+            $('.capalp').each(function(index) {
+                if ($(this).hasClass('active')) {
+                    $(this).text(fullText); // Full text for active
+                } else {
+                    $(this).text($(this).data('fulltext')[0]); // First character for non-active
+                }
+            });
+        }
+    });
+</script>
+
+</body>
+</html>

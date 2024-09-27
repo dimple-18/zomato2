@@ -1,4 +1,4 @@
- const restaurant=["Milanees's Kitchen","Grill Inn","The Bawarchi","Food Republic","Oven Story Pizza","Amor Ice Cream","The Chinese Monk","The Hunger Out","Galaxy Sweets","Gyani's Restaurant","Fresh Eat & Bite","South Indian@99","The Golden Chow","Hotel Paras Heights","Biryani By Kilo","The Alcor Hotel","Pentola Hotel","Indiana Burgers","Campus Addaa","Kitchen Kraft","The Dessert Zone"]
+const restaurant=["Milanees's Kitchen","Grill Inn","The Bawarchi","Food Republic","Oven Story Pizza","Amor Ice Cream","The Chinese Monk","The Hunger Out","Galaxy Sweets","Gyani's Restaurant","Fresh Eat & Bite","South Indian@99","The Golden Chow","Hotel Paras Heights","Biryani By Kilo","The Alcor Hotel","Pentola Hotel","Indiana Burgers","Campus Addaa","Kitchen Kraft","The Dessert Zone"]
  const foodname=[
     ["Butter Garlic Naan","Paneer Makhani","Chole Samose Chaat","Cheese Grilled Sandwich","Paneer Kabab","Chicken Lollipop","Chicken Leg Biryani","Chicken Tikka Kebab","Egg Chicken Roll","Golden Fried Prawn"],
     ["Combo Meal 1","Combo Meal 2","Veggie Delight Regular Pizza","Creamy Pasta","Deluxe Paneer Pizza","Fried Chicken Burger","Simply Chicken Footlong","Chicken 65 Dry ","Cheese Egg Maggi","Pebgfpfnhpg"],
@@ -402,7 +402,7 @@ const resaddress=[
     "Plot 443, Khata 38, Ground Floor, Riddhi Siddhi Bhawan Sonari, Jamshedpur, Jharkhand, 831001",
     "Beside Blue Bells English High School.Dimna Road, Muncipality, Purbi Singhbhum, Mango, Jamshedpur",
     "Shop 4, Plaza Market, Near Bhubaneswari Temple, Telco Colony, Jamshedpur, Jharkhand, 831001",
-    "GROUND FLOOR, NIL-14, B CHAKRAVARTY COMPOUND, Contractors Area, Bistupur, Jamshedpur, Jharkhand 831001",
+    "Ground Floor, Nil-14, B Chakravarty Compound, Contractors Area, Bistupur, Jamshedpur, Jharkhand 831001",
     "93B, New Sitaram Dera, Sakchi, Jamshedpur,Jharkhand",
     "3rd Floor, Swarnswaroop Tower, New Kalimati Road, Near Howrah Bridge, Sakchi, Jamshedpur",
     "16/B, Kasidih Line 1, Near Durga Puja Maidan, Sakchi, Jamshedpur",
@@ -426,22 +426,22 @@ openingtym=[
     "9am - 10pm(Mon - Sat)",
     "10:30am - 12am(Everyday)",
     "10am - 11pm(Mon - Fri)",
-    "10:30am - 11:30pm(Mon - Sat)",
+    "10am - 11:30pm(Mon - Sat)",
     "10am - 11:30pm(Everyday)",
-    "10:30am - 11:30pm(Mon - Sat)",
-    "10am - 11:30pm(Everyday)",
-    "10am - 11pm(Mon - Fri)",
-    "10:30am - 11:30pm(Mon - Sat)",
+    "10am - 11:30pm(Mon - Sat)",
     "10am - 11:30pm(Everyday)",
     "10am - 11pm(Mon - Fri)",
+    "10:30am - 11pm(Mon - Sat)",
     "10am - 11:30pm(Everyday)",
     "10am - 11pm(Mon - Fri)",
     "10am - 11:30pm(Everyday)",
-    "10:30am - 11:30pm(Mon - Sat)",
+    "10am - 11pm(Mon - Fri)",
+    "10am - 11:30pm(Everyday)",
+    "10:30am - 11pm(Mon - Sat)",
     "10am - 11:30pm(Everyday)",
     "10am - 11pm(Mon - Fri)",
     "10am - 11:30pm(Everyday)",
-    "10:30am - 11:30pm(Mon - Sat)",
+    "10am - 11:30pm(Mon - Sat)",
     "10am - 11pm(Mon - Fri)"
 
 ];
@@ -484,3 +484,19 @@ function chk() {
         }
     }
 }
+<<<<<<< HEAD
+=======
+// const restaurant=["Milanees's Kitchen","Grill Inn","The Bawarchi","Food Republic","Oven Story Pizza","Amor Ice Cream","The Chinese Monk","The Hunger Out","Galaxy Sweets","Gyani's Restaurant","Fresh Eat & Bite","South Indian@99","The Golden Chow","Hotel Paras Heights","Biryani By Kilo","The Alcor Hotel","Pentola Hotel","Indiana Burgers","Campus Addaa","Kitchen Kraft","The Dessert Zone"]
+
+function start(){
+    k=0
+    s=document.getElementById('searchh').value;
+    for(i=0;i<=21;i++)
+    {
+        if([i].startsWith(s))
+        {
+            document.getElementById('resname'+k).innerHTML=restaurant[i];
+        }
+    }
+}
+>>>>>>> 033d4f2211a8cf8d83faee6c9c9f9b37effab64d
