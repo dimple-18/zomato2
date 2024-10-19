@@ -71,9 +71,6 @@ body {
     padding-left: 10rem;
 }
 
-
-
-
 .capalp {
     max-width: 80px;
     height: 50px;
@@ -120,26 +117,37 @@ body {
 
 /* Paragraph Section */
 .paradiv {
-    text-align: center;
-}
+    font-family: Okra, Helvetica, sans-serif;
+    margin-left: 170px;
+} 
 
 .paratitle {
     font-size: 24px;
     margin: 20px 0;
+    font-size: 30px;
+    letter-spacing: 1px;
+    width: 600px;
+    display: flex;
+}
+
+.pt1{
+    color: rgb(239, 79, 95);
+    margin-left: 11px;
 }
 
 .paradesc {
-    max-width: 600px;
-    margin: 0 auto;
+    max-width: 92%;
     font-size: 18px;
     line-height: 1.6;
+    color: rgb(102, 99, 99);
+    font-size: 18px;
 }
 
 /* Who We Are Section */
 .mainwhoarewe {
     display: flex;
     padding: 30px;
-    background-color: #f4f4f4;
+    margin-top: 30px;
 }
 
 .mainwhoarewe-left {
@@ -148,18 +156,28 @@ body {
 }
 
 .mainwhoarewe-right img {
-    width: 100%;
+    width: 80%;
     border-radius: 10px;
+    margin-top: 50px;
 }
 
 .maintitle {
-    font-size: 30px;
+    font-size: 40px;
     margin-bottom: 10px;
+    height: 50px;
+    width: 380px;
+    padding-left: 120px;
+    font-family: Okra, Helvetica, sans-serif;
 }
 
 .mainpara {
     font-size: 18px;
     line-height: 1.5;
+    height: 500px;
+    width: 750px;
+    padding-left: 120px;
+    font-family: Okra, Helvetica, sans-serif;
+    color: rgb(132, 131, 131);
 }
 
 /* Life at Zomato Section */

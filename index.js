@@ -484,8 +484,7 @@ function chk() {
         }
     }
 }
-<<<<<<< HEAD
-=======
+
 // const restaurant=["Milanees's Kitchen","Grill Inn","The Bawarchi","Food Republic","Oven Story Pizza","Amor Ice Cream","The Chinese Monk","The Hunger Out","Galaxy Sweets","Gyani's Restaurant","Fresh Eat & Bite","South Indian@99","The Golden Chow","Hotel Paras Heights","Biryani By Kilo","The Alcor Hotel","Pentola Hotel","Indiana Burgers","Campus Addaa","Kitchen Kraft","The Dessert Zone"]
 
 function start(){
@@ -499,4 +498,4 @@ function start(){
         }
     }
 }
->>>>>>> 033d4f2211a8cf8d83faee6c9c9f9b37effab64d
+
