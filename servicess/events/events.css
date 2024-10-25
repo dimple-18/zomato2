@@ -1,0 +1,174 @@
+/* Global styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* Search Container */
+.search-container {
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navdiv {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.logodiv .logo-text {
+  font-size: 24px;
+  font-weight: bold;
+  color: #007BFF;
+}
+
+.searchdiv {
+  display: flex;
+  gap: 10px;
+}
+
+#searchh {
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #007BFF;
+  border-radius: 5px;
+  width: 300px;
+}
+
+.search-btn {
+  padding: 10px 15px;
+  font-size: 16px;
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.search-btn:hover {
+  background-color: #0056b3;
+}
+
+.eventstitle {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.eventstitle p {
+  font-size: 28px;
+  color: #333;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+/* Slider Container */
+.slider-container {
+  width: 80%;
+  margin: 60px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.firstimg{
+  width: 70%;
+  height: 400px;
+  background-image: url("https://cdn.prod.website-files.com/60414b21f1ffcdbb0d5ad688/65394afebc3706aa799155f9_event%20ideas.jpg");
+  background-size: cover;
+  font-size: 38px;
+  color: whitesmoke;
+  font-weight: bold;
+  padding-top: 140px;
+  padding-left: 200px;
+  line-height: 50px;
+}
+
+.slider {
+  width: 70%;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  display: none;
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+  width: 100%;
+  flex-shrink: 0;
+  text-align: center;
+  padding: 2rem;
+}
+
+.slide img {
+  width: 100%;
+  height: 350px; 
+  object-fit: cover; 
+  border-radius: 10px;
+}
+
+.restaurant-name {
+  font-size: 24px;
+  margin-top: 15px;
+  font-weight: bold;
+  color: #333;
+}
+
+.event-list {
+  font-size: 18px;
+  margin-top: 10px;
+  color: #666;
+}
+
+/* Buttons */
+button {
+  padding: 10px 15px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:disabled {
+  background-color: #ccc;
+}
+
+button:hover:not(:disabled) {
+  background-color: #0056b3;
+}
+
+.prev,
+.next {
+  min-width: 70px;
+  font-weight: bold;
+}
+
+
+.suggestions{
+  width: 18rem;
+  position: absolute;
+  right:8%;
+  top: 8%;
+  background-color: white;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap:0.5rem;
+  z-index: 1000;
+  border-radius: 6px;
+}

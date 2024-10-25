@@ -449,8 +449,25 @@ openingtym=[
 ratedine=["4.3*","4.1*","4.4*","4.2*","4.5*","4.2*","3.5*","3.7*","4.3*","4.1*","4.3*","4.5*","4.2*","3.8*","4.1*","4.3*","4.4*","3.9*"];
 ratedeli=["4.8*","4.7*","4.8*","4.3*","4.0*","4.8*","4.1*","4.2*","4.5*","4.3*","4.6*","4.2*","4.8*","4.0*","4.9*","4.4*","4.2*","4.8*",];
 
+user=["dimplek1@gmail.com","kumaridimple@gmail.com","dimplekumari@gmail.com"];
+passw=["12345","67890","09876"];
 
+function login() {
 
+    enteredEmail = document.getElementById('email').value;
+    enteredPass = document.getElementById('pass').value;
+
+    // Check if the entered email and password are correct
+    isLoginSuccessful = false;
+
+    // Go through each user in the list to find a match
+    for (let i = 0; i < user.length; i++) {
+        if (enteredEmail ==user[i] && enteredPass ==passw[i]) {
+            isLoginSuccessful = true;
+            break;
+        }
+    }
+}
 
 function chk() {
     let s = document.getElementById('searchh').value;
@@ -483,6 +500,7 @@ function chk() {
             break;  // Exit the loop once the restaurant is found
         }
     }
+
 }
 
 // const restaurant=["Milanees's Kitchen","Grill Inn","The Bawarchi","Food Republic","Oven Story Pizza","Amor Ice Cream","The Chinese Monk","The Hunger Out","Galaxy Sweets","Gyani's Restaurant","Fresh Eat & Bite","South Indian@99","The Golden Chow","Hotel Paras Heights","Biryani By Kilo","The Alcor Hotel","Pentola Hotel","Indiana Burgers","Campus Addaa","Kitchen Kraft","The Dessert Zone"]

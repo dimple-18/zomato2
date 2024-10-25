@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Events Slider</title>
+    <link rel="stylesheet" href="events.css">
+</head>
+<body>
+    <div class="search-container">
+        <div class="navdiv">
+            <div class="logodiv">
+                <h1 class="logo-text">Dinevox</h1>
+            </div>
+            <!-- <div class="searchdiv">
+                <input type="text" id="searchh" placeholder="Search for Restaurants" oninput="start()" autocomplete="off">
+                <button class="search-btn" onclick="chk()">Search</button>
+            </div> -->
+                <div class="searchdiv"><input type="text" id="searchh" placeholder="Search for Restaurants"><button onclick="chk()">Search</button> </div> 
+           
+            <div id="search-suggestions" class="suggestions">
+                <p id="resname0"></p>
+                <p id="resname1"></p>
+                <p id="resname2"></p>
+                <p id="resname3"></p>
+                <p id="resname4"></p>
+            </div>
+        </div>
+        <div class="eventstitle">
+            <p id="nores">EVENTS ORGANIZED BY <span id="resname"></span> →</p>
+        </div>
+    </div>
+
+    <div class="slider-container">
+        <button class="prev" id="prev">Prev</button>
+
+        <div class="firstimg" id="fid"></div>
+        <div class="slider" id="sliderid">
+            <div class="slides">
+                <div class="slide">
+                    <img src="" alt="Event Image" id="eventimg" />
+                    <p class="restaurant-name" id="eventname"></p>
+                </div>
+            </div>
+        </div>
+        
+
+        <button class="next" id="next">Next</button>
+    </div>
+
+    <script src="slider.js"></script>
+</body>
+</html>

@@ -20,7 +20,7 @@
   }
   
   .logodiv img {
-    max-height: 60px;
+    max-height: 90px;
     object-fit: contain;
    
   }
@@ -148,7 +148,8 @@
     font-size: 15px;
     transform: translateY(-10rem);
     opacity: 0;
-    transition: transform 0.5s, opacity 0.5s; /* Smooth transition */
+    transition: transform 0.1s, opacity 0.5s; /* Smooth transition */
+    text-align: justify;
   }
   
   .lastbox3:hover .datadiv1 {
