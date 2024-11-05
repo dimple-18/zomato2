@@ -406,7 +406,7 @@ h2{
     margin-top: 15px;
 }
 
-.sec4top{
+/* .sec4top{
     width: 100%;
     height: 70px;
     display: flex;
@@ -417,8 +417,8 @@ h2{
     width: 130px;
     height: 40px;
     margin-left: 200px;
-}
-#searchh2{
+} */
+/* #searchh2{
     height: 50px;
     width: 530px;
     margin-left: 140px;
@@ -442,34 +442,34 @@ h2{
     height: 40px;
     width: 40px;
     margin-left: 30px;
-}
+} */
 
-.sec4a{
+/* .sec4a{
     width: 650px;
     height: 70px;
     margin-top: 40px;
     margin-left: 240px;
     display:flex;
     
-}
+} */
 
-.diningdiv{
+/* .diningdiv{
     width: 230px;
     height:60px ;
     display: flex;
     gap: 15px;
-}
+} */
 
 
-.diningdiv .diningicon{
+/* .diningdiv .diningicon{
     width: 60px;
     height: 60px;
     border: 2px solid rgb(242, 244, 247);
     background-color: rgb(242, 244, 247);
     border-radius: 30px;
-}
+} */
 
-.diningtext{
+/* .diningtext{
     width: 150px;
     height: 50px;
     color:  rgba(12, 12, 12, 0.844);
@@ -478,13 +478,13 @@ h2{
     margin-top: 5px;
     font-family: Okra, Helvetica, sans-serif; 
   
-}
+} */
 
-.diningtext:hover{
+/* .diningtext:hover{
     color: brown;
-}
+} */
 
-.sec4b{
+/* .sec4b{
     width: 72%;
     height: 50px;
     margin-left: 210px;
@@ -492,9 +492,9 @@ h2{
     display: flex;
     gap: 15px;
     
-}
+} */
 
-.sec4bin{
+/* .sec4bin{
     width: 80px;
     height: 30px;
     border: 1px solid ;
@@ -502,28 +502,28 @@ h2{
     display: flex;
     font-size: 17px;
     padding-top: 2px;
-}
+} */
 
-.filterlogo{
+/* .filterlogo{
     width: 30px;
     height: 30px;
     margin-left: 4px;
    
-}
+} */
 
-.filtertxt{
+/* .filtertxt{
     width: 70px;
     height: 30px;
     margin-left: 7px;
     font-size: 17px;
     margin-top: 5px;
-}
+} */
 
 .onlinebg{
     width: 73%;
-    height: 250px;
+    height: 300px;
     margin-left: 210px;
-    margin-top: 35px;
+    margin-top: 150px;
     background-image: url('./images/abcd.avif');
     background-size: cover;
    
@@ -608,24 +608,13 @@ main2{
 
 main3{
     display: grid;
-    grid-template-rows: 250px 1540px;
+    grid-template-rows: 250px 1440px;
     grid-template-columns: 500px 500px;
     grid-column-gap:50px;
     grid-row-gap: 190px;
     margin-left: 250px;
     margin-top: 160px; 
 }
-
-/* main4{
-    display: grid;
-    grid-template-rows: 1540px;
-    grid-template-columns:500px 500px;
-    grid-column-gap:30px;
-    grid-row-gap: 10px;
-    margin-left: 250px;
-    margin-top: 60px;
-} */
-
 
 .d31{
     grid-row: 1/2;
@@ -719,16 +708,6 @@ main3{
     padding-top: 4px;
     font-size: 13px;
 }
-
-/* main4{
-    display: grid;
-    grid-template-rows: 1540px;
-    grid-template-columns:500px 500px;
-    grid-column-gap:30px;
-    grid-row-gap: 10px;
-    margin-left: 250px;
-    margin-top: 60px;
-} */
 
 .d33{
     grid-row: 2/3;
@@ -877,7 +856,7 @@ main6 {
 
 .seasonfav {
     width: 64rem;
-    padding: 20px;
+    /* padding: 20px; */
     background-color: #f9f9f9;
     text-align: center;
     margin-left: 240px;
@@ -930,4 +909,197 @@ main6 {
 .seasonfav .food-item-info p {
     font-size: 14px;
     margin-top: 5px;
+}
+
+#go-to {
+    width: 100px;
+    margin-left: 930px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: rgb(71, 53, 208);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#go-to:hover {
+    background-color:#f4511e; /* Darker color on hover */
+}
+
+.bgc{
+    width: 80%;
+    height: 700px;
+    margin-left: 10%;
+    overflow: hidden;
+    background-color: black;
+    background-size: cover;
+    display: none;
+}
+
+.bgc.active{
+    display: block;
+}
+
+.bgcin{
+    width: 90%;
+    height: 90%;
+    margin-left: 5%;
+    margin-top: 5%;
+    background-position: 0%;
+    border: 2px solid whitesmoke;
+    background-color: whitesmoke;
+}
+
+h2{
+    padding-left: 50px;
+    padding-top: 15px;
+}
+
+.maindiv{
+    height: 500px;
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 10px;
+    display: flex;
+    gap: 10%;
+}
+
+.leftmain{
+    width: 70%;
+    height: 100%;
+    margin-top: 20px;
+}
+
+
+.foods{
+    width: 80%;
+    height: 120px;
+    display: flex;
+    gap: 30px;
+}
+.foods1{
+    width: 80%;
+    height: 120px;
+    margin-top: 30px;
+    display: flex;
+    gap: 30px;
+}
+.foodpic{
+    width: 130px;
+    height: 120px;
+}
+
+.fooddet{
+    width: 320px;
+    height: 120px;
+}
+
+.foodname{
+    width: 100%;
+    height: 30px;
+}
+
+.foodname p{
+    font-weight: bold;
+}
+
+.descf{
+    width: 100%;
+    height: 34px;
+    margin-top: 5px;
+    color: rgb(102, 96, 96);
+    font-size: 14px;
+}
+.quan{
+    width: 30px;
+    height: 23px;
+    border-radius: 6px;
+    border: 1px solid rgb(219, 212, 212);
+    margin-top: 15px;
+    margin-left: 20px;
+    padding-left: 9px;
+    padding-top: 2px;
+    color: rgb(160, 151, 151);
+}
+
+.container {
+    width: 300px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.button-group {
+    display: flex;
+    gap: 3px;
+    margin-bottom: 20px;
+}
+
+.button-group div {
+    flex: 1;
+    padding: 10px 0;
+    background-color: #ff4b4b;
+    color: whitesmoke;
+    font-weight: bold;
+    border-radius: 6px;
+}
+
+.button-group div:hover{
+    border: 3px solid #ff4b4b;
+    background-color: white;
+    color: #ff4b4b;
+}
+
+.button-group .active {
+    background-color: #ff4b4b;
+    color: whitesmoke;
+}
+
+.total, .ready-time {
+    margin-top: 50px;
+    font-weight: bold;
+    color: #333;
+}
+
+.total .amount {
+    font-size: 24px;
+    margin-top: 5px;
+}
+
+.ready-time .time {
+    font-size: 22px;
+    color: #666;
+}
+
+.payment-icons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 70px;
+}
+
+.payment-icons div {
+    width: 40px;
+    height: 34px;
+    border-radius: 5px;
+}
+
+#place-order-button {
+    padding: 10px;
+    margin-top: 50px;
+    border: 2px solid #ff4b4b;
+    color: #ff4b4b;
+    background-color: transparent;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#place-order-button:hover{
+    background-color: rgb(213, 55, 55);
+    color: whitesmoke;
 }

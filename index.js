@@ -457,10 +457,8 @@ function login() {
     enteredEmail = document.getElementById('email').value;
     enteredPass = document.getElementById('pass').value;
 
-    // Check if the entered email and password are correct
     isLoginSuccessful = false;
 
-    // Go through each user in the list to find a match
     for (let i = 0; i < user.length; i++) {
         if (enteredEmail ==user[i] && enteredPass ==passw[i]) {
             isLoginSuccessful = true;
@@ -515,5 +513,40 @@ function start(){
             document.getElementById('resname'+k).innerHTML=restaurant[i];
         }
     }
+}
+
+function plcorder() {
+    
+    k=0
+    for (let i = 0; i < 10; i++) {
+        let quantity = parseInt(document.getElementById("qtyLabel" + i).innerHTML)
+        // s = parseInt(document.getElementById("milqty" + i).innerText)
+        if (quantity > 0) {
+            dishName = document.getElementById("foodtitle" + i).innerText;
+            price = document.getElementById("pricetitle" + i).innerText;
+        }
+        k=k+1
+        
+    
+    }
+}
+function inc(n)
+{
+   
+    x=parseInt(document.getElementById("qtyLabel"+ n).innerHTML)
+    x=x+1
+    document.getElementById("qtyLabel"+ n).innerHTML=x
+}
+function dec(n)
+{
+    x=parseInt(document.getElementById("qtyLabel"+ n).innerHTML)
+    if(x>0)
+        x=x-1
+    document.getElementById("qtyLabel"+ n).innerHTML=x
+}
+
+function ordersummary(){
+    var os=document.getElementById("os")
+    os.classList.toggle('active')
 }
 

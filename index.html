@@ -66,9 +66,10 @@
         </a>
     </div>
     <div class="sec2box">
-            <div class="sec2pic"><img src="./images/partyimg2.avif" height="100%" width="100%" ></div>
-            <div class="sec2title"><b>Party</b></div>
-            <div class="sec2para">Discover the city's best places to party</div>
+            <div class="sec2pic"><a style="text-decoration:none;color: black;"href="./veg/veg.html"><img src="https://i.pinimg.com/originals/e7/b3/d8/e7b3d814d6303203175f73a53d0509e4.jpg" height="100%" width="100%" ></div>
+            <div class="sec2title"><b>Pure Veg</b></div>
+            <div class="sec2para">Discover the city's best pure veg places</div>
+            </a>
     </div>
 </div>
 
@@ -111,7 +112,7 @@
 </div>
 
 <div class="sec4">
-    <div class="sec4top">
+    <!-- <div class="sec4top">
         <div class="logosec4"><img src="./images/dinevoxb.png" height=100% width=100%></div>
         <div class="searchdiv2"><input type="text" id="searchh2" placeholder="Search for Restaurants or dishes"></div>
         <div class="homeicon"><img src="./images/homeicon.png" height="100%" width="100%"></div>
@@ -134,16 +135,18 @@
             <div class="diningicon"><img src="./images/particon.webp" height="40px" width="40px" style="margin-top: 9px; margin-left: 7px;" ></div>
             <div class="diningtext">Party Places</div>
         </div>
-    </div>
-    <hr>
-    <div class="sec4b">
+    </div> -->
+    
+    <!-- <div class="sec4b">
         <div class="sec4bin">
             <div class="filterlogo"><img src="./images/filtersicon.png" height="100%" width="100%"></div>
             <div class="filtertxt">Filters</div>
         </div>
         <div class="sec4bin">Rating: 4+</div>
         <div class="sec4bin" style="padding-left: 8px; padding-top: 4px;">Outdoor</div>
-    </div>
+    </div> -->
+    <br><br><br>
+    <hr>
     <div class="onlinebg"><div class="onlinebgtxt"><b>Lets Explore<br> the  Delicious<br> Foods 🍔</b></div></div>
     
 </div>
@@ -232,19 +235,19 @@
                 <div class="dishdesc" id="desctitle0">Fluffy leavened dough flatbread enlivened with garlic & dollop of butter</div>
             </div>
            </div>
-             <!-- milbtn -->
+          
           <div class="milbtn">
-            <div class="milqty">
-               <button id="minusbtn">-</button>
-               <p>0</p>
-               <button id="minusbtn">+</button>
+            <div class="milqty" id="milqty0">
+               <button onclick="dec(0)">-</button>
+               <span id="qtyLabel0">0</span>
+                <button onclick="inc(0)">+</button>
             </div>
            <div class="miladdtocart">
-           <button>Add to Cart →</button>
+           <button onclick="plcorder()" id="btn11">Add to Cart →</button>
            </div>
           </div>
-       <!-- end milbtn -->
         </div>
+
 
         <div class="milveg">
             <div  class="milvegtop">
@@ -258,13 +261,13 @@
              </div>
                <!-- milbtn -->
             <div class="milbtn">
-              <div class="milqty">
-                 <button id="minusbtn">-</button>
-                 <p>0</p>
-                 <button id="minusbtn">+</button>
+              <div class="milqty" id="milqty1">
+                 <button onclick="dec(1)">-</button>
+                 <span id="qtyLabel1">0</span>
+                 <button onclick="inc(1)">+</button>
               </div>
              <div class="miladdtocart">
-             <button>Add to Cart →</button>
+             <button onclick="plcorder()" id="btn11">Add to Cart →</button>
              </div>
             </div>
          <!-- end milbtn -->
@@ -281,16 +284,16 @@
                 </div>
             </div>
                <!-- milbtn -->
-            <div class="milbtn">
-              <div class="milqty">
-                 <button id="minusbtn">-</button>
-                 <p>0</p>
-                 <button id="minusbtn">+</button>
+               <div class="milbtn">
+                <div class="milqty" id="milqty2">
+                   <button onclick="dec(2)">-</button>
+                   <span id="qtyLabel2">0</span>
+                   <button onclick="inc(2)">+</button>
+                </div>
+               <div class="miladdtocart">
+               <button onclick="plcorder()" id="btn11">Add to Cart →</button>
+               </div>
               </div>
-             <div class="miladdtocart">
-             <button>Add to Cart →</button>
-             </div>
-            </div>
          <!-- end milbtn -->
           </div>
 
@@ -305,16 +308,16 @@
                 </div>
             </div>
                <!-- milbtn -->
-            <div class="milbtn">
-              <div class="milqty">
-                 <button id="minusbtn">-</button>
-                 <p>0</p>
-                 <button id="minusbtn">+</button>
+               <div class="milbtn">
+                <div class="milqty" id="milqty3">
+                   <button onclick="dec(3)">-</button>
+                   <span id="qtyLabel3">0</span>
+                   <button onclick="inc(3)">+</button>
+                </div>
+               <div class="miladdtocart">
+               <button onclick="plcorder()" id="btn11">Add to Cart →</button>
+               </div>
               </div>
-             <div class="miladdtocart">
-             <button>Add to Cart →</button>
-             </div>
-            </div>
          <!-- end milbtn -->
           </div>
 
@@ -329,16 +332,16 @@
                 </div>
             </div>
                <!-- milbtn -->
-            <div class="milbtn">
-              <div class="milqty">
-                 <button id="minusbtn">-</button>
-                 <p>0</p>
-                 <button id="minusbtn">+</button>
+               <div class="milbtn">
+                <div class="milqty" id="milqty4">
+                   <button onclick="dec(4)">-</button>
+                   <span id="qtyLabel4">0</span>
+                   <button onclick="inc(4)">+</button>
+                </div>
+               <div class="miladdtocart">
+               <button onclick="plcorder()" id="btn11">Add to Cart →</button>
+               </div>
               </div>
-             <div class="miladdtocart">
-             <button>Add to Cart →</button>
-             </div>
-            </div>
          <!-- end milbtn -->
           </div>
       
@@ -357,16 +360,16 @@
                 </div>
             </div>
                <!-- milbtn -->
-            <div class="milbtn">
-              <div class="milqty">
-                 <button id="minusbtn">-</button>
-                 <p>0</p>
-                 <button id="minusbtn">+</button>
+               <div class="milbtn">
+                <div class="milqty" id="milqty5">
+                   <button onclick="dec(5)">-</button>
+                   <span id="qtyLabel5">0</span>
+                   <button onclick="inc(5)">+</button>
+                </div>
+               <div class="miladdtocart">
+               <button onclick="plcorder()" id="btn11">Add to Cart →</button>
+               </div>
               </div>
-             <div class="miladdtocart">
-             <button>Add to Cart →</button>
-             </div>
-            </div>
          <!-- end milbtn -->
           </div>
          <!-- end main div -->
@@ -381,16 +384,16 @@
                 </div>
             </div>
                <!-- milbtn -->
-            <div class="milbtn">
-              <div class="milqty">
-                 <button id="minusbtn">-</button>
-                 <p>0</p>
-                 <button id="minusbtn">+</button>
+               <div class="milbtn">
+                <div class="milqty" id="milqty6">
+                   <button onclick="dec(6)">-</button>
+                   <span id="qtyLabel6">0</span>
+                   <button onclick="inc(6)">+</button>
+                </div>
+               <div class="miladdtocart">
+               <button onclick="plcorder()" id="btn11">Add to Cart →</button>
+               </div>
               </div>
-             <div class="miladdtocart">
-             <button>Add to Cart →</button>
-             </div>
-            </div>
          <!-- end milbtn -->
           </div>
          <!-- end main div -->
@@ -406,16 +409,16 @@
                 </div>
             </div>
                <!-- milbtn -->
-            <div class="milbtn">
-              <div class="milqty">
-                 <button id="minusbtn">-</button>
-                 <p>0</p>
-                 <button id="minusbtn">+</button>
+               <div class="milbtn">
+                <div class="milqty" id="milqty7">
+                   <button onclick="dec(7)">-</button>
+                   <span id="qtyLabel7">0</span>
+                   <button onclick="inc(7)">+</button>
+                </div>
+               <div class="miladdtocart">
+               <button onclick="plcorder()" id="btn11">Add to Cart →</button>
+               </div>
               </div>
-             <div class="miladdtocart">
-             <button>Add to Cart →</button>
-             </div>
-            </div>
          <!-- end milbtn -->
           </div>
          <!-- end main div -->
@@ -431,16 +434,16 @@
                 </div>
             </div>
                <!-- milbtn -->
-            <div class="milbtn">
-              <div class="milqty">
-                 <button id="minusbtn">-</button>
-                 <p>0</p>
-                 <button id="minusbtn">+</button>
+               <div class="milbtn">
+                <div class="milqty" id="milqty8">
+                   <button onclick="dec(8)">-</button>
+                   <span id="qtyLabel8">0</span>
+                   <button onclick="inc(8)">+</button>
+                </div>
+               <div class="miladdtocart">
+               <button onclick="plcorder()" id="btn11">Add to Cart →</button>
+               </div>
               </div>
-             <div class="miladdtocart">
-             <button>Add to Cart →</button>
-             </div>
-            </div>
          <!-- end milbtn -->
           </div>
 
@@ -456,20 +459,80 @@
                 </div>
             </div>
                <!-- milbtn -->
-            <div class="milbtn">
-              <div class="milqty">
-                 <button id="minusbtn">-</button>
-                 <p>0</p>
-                 <button id="minusbtn">+</button>
+               <div class="milbtn">
+                <div class="milqty" id="milqty9">
+                   <button onclick="dec(9)">-</button>
+                   <span id="qtyLabel9">0</span>
+                   <button onclick="inc(9)">+</button>
+                </div>
+               <div class="miladdtocart">
+               <button onclick="plcorder()" id="btn11">Add to Cart →</button>
+               </div>
               </div>
-             <div class="miladdtocart">
-             <button>Add to Cart →</button>
-             </div>
-            </div>
          <!-- end milbtn -->
+         
           </div>
     </div>
-
+    <button onclick="ordersummary()" id="go-to"><img src="https://cdn-icons-png.flaticon.com/128/4647/4647563.png" width="100%" height="100%"></button>
 </main3>
+
+<div class="bgc" id="os">
+    <div class="bgcin">
+        <h2>Your Order Summary</h2>
+        <div class="maindiv">
+            <div class="leftmain">
+                <div class="foods">
+                    <div class="foodpic"><img src="https://images.themodernproper.com/billowy-turkey/production/posts/VegetableStirFry_9.jpg?w=960&h=960&q=82&fm=jpg&fit=crop&dm=1703377301&s=1a9a7367540b534f0b4d7b41a15a9816" height="100%" width="100%"></div>
+                    <div class="fooddet">
+                        <div class="foodname"><p>Vegetable Stir Fry</p></div>
+                        <div class="descf"><p>Fresh vegetables sautéed in a flavorful sauce, quick, healthy, and delicious.</p></div>
+                        <div class="quan">2</div>
+                    </div>
+                </div>
+                <div class="foods1">
+                    <div class="foodpic"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQu3pp4-9ZAhDRkXfzhyi8vYS1DUhYi_OqKyg&s" height="100%" width="100%"></div>
+                    <div class="fooddet">
+                        <div class="foodname"><p>Prawn Stir Fry</p></div>
+                        <div class="descf"><p>Juicy prawns stir-fried with vegetables and sauce, bold and delicious flavors.</p></div>
+                        <div class="quan">2</div>
+                    </div>
+                </div>
+                <div class="foods1">
+                    <div class="foodpic"><img src="https://kitchenofdebjani.com/wp-content/uploads/2023/04/easy-indian-chicken-curry-Recipe-for-beginners-Debjanir-rannaghar.jpg" height="100%" width="100%"></div>
+                    <div class="fooddet">
+                        <div class="foodname"><p>Chicken Curry</p></div>
+                        <div class="descf"><p>Tender chicken pieces simmered in a spiced gravy, comforting and aromatic.</p></div>
+                        <div class="quan">2</div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="button-group">
+                    <div>PICKUP</div>
+                    <div class="active">DELIVERY</div>
+                </div>
+        
+                <div class="total">
+                    YOUR TOTAL
+                    <div class="amount">₹430/-</div>
+                </div>
+        
+                <div class="ready-time">
+                    YOUR ORDER WILL BE READY IN
+                    <div class="time">25 MIN</div>
+                </div>
+        
+                <div class="payment-icons">
+                    <div><img src="https://cdn-icons-png.flaticon.com/128/5968/5968299.png" height="100%" width="100%"></div>
+                    <div><img src="https://cdn-icons-png.flaticon.com/128/14881/14881313.png" height="140%" width="100%"></div>
+                    <div><img src="https://cdn-icons-png.flaticon.com/128/14021/14021433.png" height="100%" width="100%"></div>
+                    <div><img src="https://cdn.iconscout.com/icon/free/png-512/free-cod-icon-download-in-svg-png-gif-file-formats--credit-debit-bank-payment-methods-vol-2-pack-business-icons-32290.png?f=webp&w=256" height="140%" width="120%"></div>
+                </div>
+        
+                <button id="place-order-button">PLACE ORDER</button>
+            </div> 
+        </div>
+    </div>
+</div>
 </body>
 </html>

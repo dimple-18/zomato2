@@ -53,8 +53,10 @@ body {
 }
 
 .anima{
-    width: 60%;
-    height: 610px;
+    width: 40%;
+    height: 300px;
+    margin-top: 280px;
+    margin-left: 200px;
 }
 
 .anima img{
