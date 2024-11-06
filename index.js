@@ -516,20 +516,75 @@ function start(){
 }
 
 function plcorder() {
-    
-    k=0
+    const orders = [];
+    let totalAmount = 0; // Initialize total amount to zero
+
+    // Loop through the items to gather selected orders
     for (let i = 0; i < 10; i++) {
-        let quantity = parseInt(document.getElementById("qtyLabel" + i).innerHTML)
-        // s = parseInt(document.getElementById("milqty" + i).innerText)
+        const quantity = parseInt(document.getElementById("qtyLabel" + i).innerText);
         if (quantity > 0) {
-            dishName = document.getElementById("foodtitle" + i).innerText;
-            price = document.getElementById("pricetitle" + i).innerText;
+            const dishName = document.getElementById("foodtitle" + i).innerText;
+            const priceText = document.getElementById("pricetitle" + i).innerText;
+            const price = parseFloat(priceText.replace("₹", "").replace("/-", "").trim()); // Convert price to a number
+            const dishimage = document.getElementById("vegpics" + i).src;
+            const dishdesc = document.getElementById("desctitle" + i).innerText;
+
+            // Calculate the total price for this item
+            const itemTotal = price * quantity;
+            totalAmount += itemTotal; // Add to total amount
+
+            // Add item to the orders array
+            orders.push({ dishName, dishimage, quantity, price, dishdesc, itemTotal });
         }
-        k=k+1
-        
+    }
     
+    console.log(orders);
+    renderOrders(orders);
+
+    // Update the total amount in the .amount div
+    document.querySelector(".total .amount").innerText = `₹${totalAmount}/-`;
+}
+
+function renderOrders(orders) {
+    const orderList = document.querySelector(".leftmain");
+    const foodItems = orderList.getElementsByClassName("foods"); // Get existing food items
+
+    // Loop through the orders and update existing food items or fill available slots
+    for (let i = 0; i <= orders.length; i++) {
+        const order = orders[i];
+        if (i < foodItems.length) { // Check if we have a corresponding div
+            const existingFoodItem = foodItems[i];
+
+            // Update the food image
+            const foodPic = existingFoodItem.querySelector(".foodpic img");
+            foodPic.src = order.dishimage;
+
+            // Update the food name
+            const foodName = existingFoodItem.querySelector(".foodname p");
+            foodName.innerText = order.dishName;
+
+            // Update the food description
+            const desc = existingFoodItem.querySelector(".descf p");
+            desc.innerText = order.dishdesc;
+
+            // Update the quantity
+            const quantityDiv = existingFoodItem.querySelector(".quan");
+            const currentQuantity = parseInt(quantityDiv.innerText.split(": ")[1]) || 0; 
+            quantityDiv.innerText = `${currentQuantity + order.quantity}`; 
+
+            const price = existingFoodItem.querySelector(".price");
+            price.innerText = `₹${order.price}/-`
+
+        }
+    }
+
+    // Clear remaining slots if there are fewer orders than food items
+    for (let j = orders.length; j < foodItems.length; j++) {
+        orderList.removeChild(foodItems[j]); // Remove excess items if any
     }
 }
+
+
 function inc(n)
 {
    

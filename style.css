@@ -957,6 +957,19 @@ h2{
     padding-top: 15px;
 }
 
+.info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.price {
+    color: #333;
+    font-weight: bold;
+    font-size: 16px;
+}
+
 .maindiv{
     height: 500px;
     width: 90%;
