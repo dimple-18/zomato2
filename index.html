@@ -9,35 +9,36 @@
     
 </head>
 <body>
-<div class="loginpage">
-    <div class="loginbox">
-        <form action="" id="f0">
-            <h2>Login</h2>
-            <div class="inputbox">
-                <span class="icon">
-                    <i class="bx bxs-envelope"></i>
-                </span>
-                <input type="email" id="email" required>
-                <label>Email</label>
-            </div>
-            <div class="inputbox">
-                <span class="icon">
-                    <i class="bx bxs-lock"></i>
-                </span>
-                <input type="password" id="pass" required>
-                <label>Password</label>
-            </div>
-            <div class="rememberme">
-                <label><input type="checkbox">Remember Me</label>
-                <a href="#">Forgot Password</a>
-            </div>
-            <button class="loginbtn" type="submit" onclick="login()">Login</button>
-            <div class="register-link">
-                <p>Don't have an account <a href="#">Register</a></p>
-            </div>
-        </form>
+    <div class="loginpage">
+        <div class="loginbox">
+            <form id="f0" onsubmit="login(event)">
+                <h2>Login</h2>
+                <div class="inputbox">
+                    <span class="icon">
+                        <i class="bx bxs-envelope"></i>
+                    </span>
+                    <input type="email" id="email" required>
+                    <label>Email</label>
+                </div>
+                <div class="inputbox">
+                    <span class="icon">
+                        <i class="bx bxs-lock"></i>
+                    </span>
+                    <input type="password" id="pass" required>
+                    <label>Password</label>
+                </div>
+                <div class="rememberme">
+                    <label><input type="checkbox">Remember Me</label>
+                    <a href="#">Forgot Password</a>
+                </div>
+                <button type="submit" class="loginbtn">Login</button>
+                <div class="register-link">
+                    <p>Don't have an account <a href="#">Register</a></p>
+                </div>
+            </form>
+        </div>
     </div>
-</div>
+    
    
     <div class="sec1">
         <div>

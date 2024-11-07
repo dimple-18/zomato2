@@ -454,33 +454,33 @@ passwords=["dimple","preity","suman"];
 usernames=["Dimple Kumari","Preity Khanna","Suman Sharma"];
 addresses=["H.no 52, South Park, Bistupur, Jamshedpur","Vijay Niwas Apartment, 3rd Floor, Flat no. 410, Mango, Jamshedour","Neetu Niwas, Road no. 5, Sonari, Jamshedpur"];
 
-function login() {
+
+function login(e) {
+    e.preventDefault();
 
     const email = document.getElementById('email').value;
     const password = document.getElementById('pass').value;
     const loginBox = document.querySelector(".loginbox");
 
     const userIndex = users.findIndex((user, index) => user === email && passwords[index] === password);
+    
+     console.log("User",userIndex);
 
-
-
-
+     console.log("Username --->",usernames[userIndex]);
+     console.log("Address --->",addresses[userIndex]);
 
     
     if (userIndex !== -1) {
         // Successful login
         document.querySelector(".loginpage").style.display = "none"; // Hide login page
-        document.getElementById("order-section").style.display = "block"; // Show order button
-
+        
+        console.log("Runnning-->");
         // Populate user details in invoice
         document.getElementById("invoice-name").innerText = usernames[userIndex];
         document.getElementById("invoice-address").innerText = addresses[userIndex];
-        loginMessage.innerText = ""; // Clear previous messages
-
+      
     } else {
-        // Invalid login
-        loginMessage.innerText = "Invalid email or password.";
-        loginBox.appendChild(loginMessage);
+      console.log("Login Failed");
     }
 
     return false; // Prevent form submission
