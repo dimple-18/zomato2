@@ -449,25 +449,57 @@ openingtym=[
 ratedine=["4.3*","4.1*","4.4*","4.2*","4.5*","4.2*","3.5*","3.7*","4.3*","4.1*","4.3*","4.5*","4.2*","3.8*","4.1*","4.3*","4.4*","3.9*"];
 ratedeli=["4.8*","4.7*","4.8*","4.3*","4.0*","4.8*","4.1*","4.2*","4.5*","4.3*","4.6*","4.2*","4.8*","4.0*","4.9*","4.4*","4.2*","4.8*",];
 
-user=["dimplek1@gmail.com","khannapri@gmil.com","sosuman123@gmail.com"];
-passw=["dimple","preity","suman"];
-username=["Dimple Kumari","Preity Khanna","Suman Sharma"];
-address=["H.no 52, South Park, Bistupur, Jamshedpur","Vijay Niwas Apartment, 3rd Floor, Flat no. 410, Mango, Jamshedour","Neetu Niwas, Road no. 5, Sonari, Jamshedpur"];
+users=["dimplek1@gmail.com","khannapri@gmil.com","sosuman123@gmail.com"];
+passwords=["dimple","preity","suman"];
+usernames=["Dimple Kumari","Preity Khanna","Suman Sharma"];
+addresses=["H.no 52, South Park, Bistupur, Jamshedpur","Vijay Niwas Apartment, 3rd Floor, Flat no. 410, Mango, Jamshedour","Neetu Niwas, Road no. 5, Sonari, Jamshedpur"];
 
 function login() {
 
-    enteredEmail = document.getElementById('email').value;
-    enteredPass = document.getElementById('pass').value;
+    const email = document.getElementById('email').value;
+    const password = document.getElementById('pass').value;
+    const loginBox = document.querySelector(".loginbox");
 
-    isLoginSuccessful = false;
+    const userIndex = users.findIndex((user, index) => user === email && passwords[index] === password);
 
-    for (let i = 0; i < user.length; i++) {
-        if (enteredEmail ==user[i] && enteredPass ==passw[i]) {
-            isLoginSuccessful = true;
-            break;
-        }
+
+
+
+
+    
+    if (userIndex !== -1) {
+        // Successful login
+        document.querySelector(".loginpage").style.display = "none"; // Hide login page
+        document.getElementById("order-section").style.display = "block"; // Show order button
+
+        // Populate user details in invoice
+        document.getElementById("invoice-name").innerText = usernames[userIndex];
+        document.getElementById("invoice-address").innerText = addresses[userIndex];
+        loginMessage.innerText = ""; // Clear previous messages
+
+    } else {
+        // Invalid login
+        loginMessage.innerText = "Invalid email or password.";
+        loginBox.appendChild(loginMessage);
     }
+
+    return false; // Prevent form submission
 }
+
+
+    // isLoginSuccessful = false;
+
+    // for (let i = 0; i < user.length; i++) {
+    //     if (enteredEmail ==user[i] && enteredPass ==passw[i]) {
+    //         isLoginSuccessful = true;
+    //         break;
+    //          // Populate user details in invoice
+    //     document.getElementById("invoice-name").innerText = usernames[userIndex];
+    //     document.getElementById("invoice-address").innerText = addresses[userIndex];
+    //     loginMessage.innerText = ""; // Clear previous messages
+    //     }
+    // }
+
 
 function chk() {
     let s = document.getElementById('searchh').value;
@@ -614,5 +646,6 @@ function ordersummary(){
 function showInvoice() {
     document.getElementById("invoice").style.display = "block";
     document.getElementById("orderSummary").style.display = "none"; // Hide order summary
+    document.getElementById("invoiceTotalAmount").innerText = "₹220.00"; //eg
 }
 
