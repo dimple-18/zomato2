@@ -1116,3 +1116,52 @@ h2{
     background-color: rgb(213, 55, 55);
     color: whitesmoke;
 }
+
+
+
+
+
+.invoice-container {
+    width: 500px;
+    margin-left: 240px;
+    margin-top: 40px;
+    background-color: rgb(245, 226, 226);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+    display: none;
+}
+
+h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.invoice-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    margin-top: 10px;
+}
+
+.invoice-table th, .invoice-table td {
+    padding: 10px;
+    font-size: 16px;
+}
+
+.invoice-table th {
+    font-size: 20px;
+    color: #666;
+    text-align: center;
+}
+
+.invoice-table tr td:first-child {
+    font-weight: bold;
+    color: #444;
+}
+
+hr {
+    border: none;
+    border-top: 2px solid #ddd;
+}

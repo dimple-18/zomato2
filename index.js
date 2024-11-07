@@ -449,8 +449,10 @@ openingtym=[
 ratedine=["4.3*","4.1*","4.4*","4.2*","4.5*","4.2*","3.5*","3.7*","4.3*","4.1*","4.3*","4.5*","4.2*","3.8*","4.1*","4.3*","4.4*","3.9*"];
 ratedeli=["4.8*","4.7*","4.8*","4.3*","4.0*","4.8*","4.1*","4.2*","4.5*","4.3*","4.6*","4.2*","4.8*","4.0*","4.9*","4.4*","4.2*","4.8*",];
 
-user=["dimplek1@gmail.com","kumaridimple@gmail.com","dimplekumari@gmail.com"];
-passw=["12345","67890","09876"];
+user=["dimplek1@gmail.com","khannapri@gmil.com","sosuman123@gmail.com"];
+passw=["dimple","preity","suman"];
+username=["Dimple Kumari","Preity Khanna","Suman Sharma"];
+address=["H.no 52, South Park, Bistupur, Jamshedpur","Vijay Niwas Apartment, 3rd Floor, Flat no. 410, Mango, Jamshedour","Neetu Niwas, Road no. 5, Sonari, Jamshedpur"];
 
 function login() {
 
@@ -538,12 +540,16 @@ function plcorder() {
         }
     }
     
-    console.log(orders);
+   
     renderOrders(orders);
 
     // Update the total amount in the .amount div
     document.querySelector(".total .amount").innerText = `₹${totalAmount}/-`;
+    document.getElementById("invoiceTotalAmount").innerText = `₹${totalAmount}/-`;
 }
+
+// Show the invoice when "PLACE ORDER" button is clicked
+document.getElementById("place-order-button").addEventListener("click", showInvoice);
 
 function renderOrders(orders) {
     const orderList = document.querySelector(".leftmain");
@@ -570,14 +576,14 @@ function renderOrders(orders) {
             // Update the quantity
             const quantityDiv = existingFoodItem.querySelector(".quan");
             const currentQuantity = parseInt(quantityDiv.innerText.split(": ")[1]) || 0; 
-            quantityDiv.innerText = `${currentQuantity + order.quantity}`; 
+            quantityDiv.innerText = `${order.quantity}`; 
 
             const price = existingFoodItem.querySelector(".price");
-            price.innerText = `₹${order.price}/-`
+            price.innerText = `Price: ₹${order.price}/-`;
 
         }
     }
-
+    document.getElementById("place-order-button").addEventListener("click", showInvoice);
     // Clear remaining slots if there are fewer orders than food items
     for (let j = orders.length; j < foodItems.length; j++) {
         orderList.removeChild(foodItems[j]); // Remove excess items if any
@@ -603,5 +609,10 @@ function dec(n)
 function ordersummary(){
     var os=document.getElementById("os")
     os.classList.toggle('active')
+}
+
+function showInvoice() {
+    document.getElementById("invoice").style.display = "block";
+    document.getElementById("orderSummary").style.display = "none"; // Hide order summary
 }
 
