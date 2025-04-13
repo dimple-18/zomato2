@@ -45,6 +45,10 @@ main1{
     margin-left: 260px;
     margin-top: 40px;
 }
+
+
+
+
 .d1{
     grid-row: 1/2;
     grid-template-columns: 1/2;
@@ -207,12 +211,17 @@ main1{
 .buttondiv{
     width: 44px;
     height: 19px;
-    margin-left: 39px;
+    margin-left: 36px;
     margin-top: 1px;
-    padding-left: 8px;
+    /* padding-left: 11px; */
     background-color: rgb(61, 147, 18);
     color: white;
     border-radius: 6px;
+}
+
+
+.buttondiv b{
+    padding-left: 10px;
 }
 
 
@@ -233,3 +242,27 @@ main1{
     margin-left: 29px;
     padding-left: 3px;
 }
+
+
+
+
+
+
+
+
+
+
+
+.d1 img, .d2 img, .d3 img, .d4 img, .d5 img, .d6 img, .d7 img, .d8 img, 
+.d9 img, .d10 img, .d11 img, .d12 img, .d13 img, .d14 img, .d15 img, 
+.d16 img, .d17 img, .d18 img, .d19 img, .d20 img, .d21 img {
+    
+    box-shadow: 4px 4px 8px rgba(229, 221, 140, 0.889), 
+              -4px -4px 8px rgb(212, 210, 210);
+}
+ 
+
+
+
+
+

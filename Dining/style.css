@@ -1,4 +1,4 @@
-.heromain{
+/* .heromain{
     width: 66%;
     margin-left: 17%;
     position: relative;
@@ -6,10 +6,10 @@
     z-index: 1111;
     overflow: hidden;
     box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
-    ;
-}
+    
+} */
 
-.hero-section {
+/* .hero-section {
     background: url('https://images.unsplash.com/photo-1487790343276-2fe56a7d9439?q=80&w=2067&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center center/cover;
     height: 350px;
     display: flex;
@@ -25,47 +25,36 @@
     border-radius: 10px;
     overflow: hidden;
     outline: 2px solid white;
+  } */
+
+
+   */
+
+   .heromain{
+    width: 66%;
+    margin-left: 17%;
+    
+}
+
+.hero-section {
+    background: url('https://images.unsplash.com/photo-1487790343276-2fe56a7d9439?q=80&w=2067&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center center/cover;
+    height: 350px;
+    margin-left: 17%;
+    margin-right: 17%;
+    display: flex;
+    margin-top: 40px;
+    justify-content: left;
+    align-items: center;
+    color: white;
+    text-align: center;
   }
   
-  .blob{
-    background-color: rgba(217, 132, 143, 0.5);
+
+   .hero-content {
+    background-color: rgba(131, 162, 230, 0.805);
     padding: 20px;
     max-width: 600px;
-    position: absolute;
-    z-index: 1;
-    top: 50%;
-    left: 50%;
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    background-color: #ff0000;
-    opacity: 1;
-    filter: blur(12px);
-    animation: blob-bounce 5s infinite ease;
   }
-
-  @keyframes blob-bounce {
-    0% {
-      transform: translate(-100%, -100%) translate3d(0, 0, 0);
-    }
-  
-    25% {
-      transform: translate(-100%, -100%) translate3d(100%, 0, 0);
-    }
-  
-    50% {
-      transform: translate(-100%, -100%) translate3d(100%, 100%, 0);
-    }
-  
-    75% {
-      transform: translate(-100%, -100%) translate3d(0, 100%, 0);
-    }
-  
-    100% {
-      transform: translate(-100%, -100%) translate3d(0, 0, 0);
-    }
-  }
-  
 
   .hero-content:hover{
     background-color:rgb(5, 22, 65);
@@ -177,13 +166,14 @@ main2{
     height: 19px;
     margin-left: 39px;
     margin-top: 1px;
-    padding-left: 8px;
     background-color: rgb(61, 147, 18);
     color: white;
     border-radius: 6px;
 }
 
-
+.buttondiv b{
+  padding-left: 11px;
+}
 
 .price{
     width: 83px;
@@ -205,3 +195,10 @@ main2{
     width: 80%;
     height: 350px;
 }
+
+
+.d22 img, .d23 img, .d24 img, .d25 img, .d26 img, .d27 img, .d28 img, .d29 img, .d30 img {
+  box-shadow: 4px 4px 8px rgba(229, 221, 140, 0.889), 
+              -4px -4px 8px rgb(212, 210, 210);
+}
+

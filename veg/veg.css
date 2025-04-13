@@ -129,13 +129,15 @@ main2{
     height: 19px;
     margin-left: 39px;
     margin-top: 1px;
-    padding-left: 8px;
+    padding-left: 6px;
     background-color: rgb(61, 147, 18);
     color: white;
     border-radius: 6px;
 }
 
-
+.buttondiv b{
+    padding-left: 8px;
+  }
 
 .price{
     width: 83px;
@@ -157,3 +159,9 @@ main2{
     width: 80%;
     height: 350px;
 }
+
+.d22 img, .d23 img, .d24 img, .d25 img, .d26 img, .d27 img, .d28 img, .d29 img, .d30 img {
+    box-shadow: 4px 4px 8px rgba(229, 221, 140, 0.889), 
+                -4px -4px 8px rgb(212, 210, 210);
+  }
+  
