@@ -487,18 +487,6 @@ function login(e) {
 }
 
 
-    // isLoginSuccessful = false;
-
-    // for (let i = 0; i < user.length; i++) {
-    //     if (enteredEmail ==user[i] && enteredPass ==passw[i]) {
-    //         isLoginSuccessful = true;
-    //         break;
-    //          // Populate user details in invoice
-    //     document.getElementById("invoice-name").innerText = usernames[userIndex];
-    //     document.getElementById("invoice-address").innerText = addresses[userIndex];
-    //     loginMessage.innerText = ""; // Clear previous messages
-    //     }
-    // }
 
 
 function chk() {
@@ -509,7 +497,6 @@ function chk() {
             document.getElementById("resimg").src = "images/" + imgres[i];
             document.getElementById("resname").innerHTML = restname[i];
             document.getElementById("rdetail").innerHTML = resttdescrip[i];
-
             document.getElementById("restloc").innerHTML = resaddress[i];
             document.getElementById("restime").innerHTML = openingtym[i];
             document.getElementById("dirate").innerHTML = ratedine[i];
@@ -647,5 +634,7 @@ function showInvoice() {
     document.getElementById("invoice").style.display = "block";
     document.getElementById("orderSummary").style.display = "none"; // Hide order summary
     document.getElementById("invoiceTotalAmount").innerText = "₹220.00"; //eg
+
+    
 }
 
