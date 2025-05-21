@@ -55,8 +55,8 @@ const eimg = [
      "https://www.apexacoustics.co.uk/wp-content/uploads/2015/07/3-Tyneside-Cinema-cafe-bar-film-screening.jpg"
     ],
     [
-     "https://yasc.edu.ph/wp-content/uploads/2023/06/Pizza-News1.jpg",
-     "https://www.tastecard.co.uk/content/dam/dcg/products/restaurants/giraffe/images/GIRAFFE-FOOD-EXT-0001.JPG",
+     "https://www.pizzaexpress.com/-/media/2024-Images/Apr/KPMP-Web-App-Assets.ashx",
+     "https://img.freepik.com/free-photo/people-taking-photos-food_23-2149303524.jpg?semt=ais_hybrid&w=740",
      "https://media.istockphoto.com/id/1553473885/photo/happy-extended-indian-family-dining-together-outdoors-in-fancy-house-garden-at-night-family.jpg?s=612x612&w=0&k=20&c=_oUDTPMo6pMHzCXFnZf7uEkTKoOb0RE5GzvldYdFH0A=",
      "https://www.restaurantdive.com/imgproxy/oeg4S_CaItibuaGqI7uiTHpN1w2VXAFUfG5N1UAwvVw/g:ce/rs:fill:1200:675:1/bG9jYWw6Ly8vZGl2ZWltYWdlL0dldHR5SW1hZ2VzLTEzMzEwNzY1NDUuanBn.webp"
     ],
@@ -100,7 +100,7 @@ const eimg = [
     "https://indianfoodfreak.com/wp-content/uploads/2014/09/South-Indian-Prasadam-Thali-1.jpg",
     "https://assets.telegraphindia.com/telegraph/2024/Sep/1725973422_lead.jpg",
     "https://content.jdmagicbox.com/comp/def_content/cookery_classes/default-cookery-classes-9.jpg",
-    "https://bytesflow.com/wp-content/uploads/2019/04/shutterstock_543802489-850x476.jpg"
+    "https://www.restobiz.ca/wp-content/uploads/2021/11/II2.png"
     ],
     [
     "https://popmenucloud.com/cdn-cgi/image/width=1920,height=1920,format=auto,fit=scale-down/vfihdymn/33e2959a-9238-4fbd-9aeb-1b858af9fa63.jpg",
@@ -124,7 +124,7 @@ const eimg = [
     "https://www.stmaur.ac.jp/images/2024/01/08/231028-121---Christina-Furstenau1.jpg",
     "https://www.holidify.com/images/cmsuploads/compressed/05102016_Anti-Social1_20180609154309.jpg",
     "https://www.benaresnyc.com/wp-content/themes/benaras/img/corporate-banner.jpg",
-    "https://www.powerofparenting.co.uk/files/images/pop_ball_2018_12.jpg"
+    "https://lirp.cdn-website.com/28cd0bb4/dms3rep/multi/opt/gala+in+fairfax-+va+-+CrystalView-640w.jpeg"
     ],
     [
     "https://carrolldesign.co.uk/wp-content/uploads/2024/05/hotel-event-room.jpg",
