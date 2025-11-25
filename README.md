@@ -11,6 +11,7 @@ This project is very special to me because it was the **first website I ever des
 - All design decisions came from my own imagination.  
 - It taught me the basics of UI, layout, spacing, and responsiveness.  
 - I keep it public as a reminder of **how far I’ve come**.
+- This project taught me patience, creativity, courage to start, and a real willingness to learn.
 
 ---
 
